@@ -11,7 +11,7 @@ sudo mkdir /home/ansible/.ssh
 sudo touch /home/mrtshoot/.ssh/authorized_keys
 sudo touch /home/ansible/.ssh/authorized_keys
 sudo chown mrtshoot:mrtshoot /home/mrtshoot/.ssh
-sudo chown mrtshoot:mrtshoot /home/ansible/.ssh
+sudo chown ansible:ansible /home/ansible/.ssh
 sudo chown root:root /home/mrtshoot/.ssh/authorized_keys
 sudo chown root:root /home/ansible/.ssh/authorized_keys
 sudo cp .ssh_keys /home/mrtshoot/.ssh/authorized_keys
