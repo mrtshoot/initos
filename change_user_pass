@@ -1,0 +1,13 @@
+#!/usr/bin/expect
+spawn sudo passwd mrtshoot
+expect "New password: "
+send "##HHthebest$$\n"
+expect "Retype new password: "
+send "##HHthebest$$\n"
+interact
+spawn sudo passwd ansible
+expect "New password: "
+send "123456aA\n"
+expect "Retype new password: "
+send "123456aA\n"
+interact
