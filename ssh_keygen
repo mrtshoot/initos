@@ -1,9 +1,0 @@
-#!/usr/bin/expect
-spawn ssh-keygen
-expect "(/home/mrtshoot/.ssh/id_rsa): "
-send "\n"
-expect "(empty for no passphrase): "
-send "\n"
-expect "passphrase again: "
-send "\n"
-interact

@@ -16,4 +16,5 @@ sudo chown root:root /home/mrtshoot/.ssh/authorized_keys
 sudo chown root:root /home/ansible/.ssh/authorized_keys
 sudo cp .ssh_keys /home/mrtshoot/.ssh/authorized_keys
 sudo cp .ssh_keys /home/ansible/.ssh/authorized_keys
+sudo cp ssh_banner.txt /etc/ssh/banner.txt
 exit 0
