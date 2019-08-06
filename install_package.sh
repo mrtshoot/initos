@@ -10,4 +10,5 @@ sudo yum install python36u-devel -y &&\
 sudo pip3.6 install --upgrade pip &&\
 sudo yum install ntp -y &&\
 sudo yum install expect -y &&\
+sudo yum install net-tools -y &&\
 exit 0
