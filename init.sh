@@ -9,5 +9,6 @@ bash ssh_config.sh
 bash ntp_config.sh
 bash add_rule_firewall.sh
 bash start_service.sh
+bash permission.sh
 exit 0
 
