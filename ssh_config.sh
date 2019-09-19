@@ -1,11 +1,12 @@
 #!/bin/bash
 sudo cp ssh_banner.txt /etc/ssh/banner.txt
-sudo sed 's/#PermitRootLogin yes/PermitRootLogin no/g' /etc/ssh/sshd_config
-sudo sed 's/#PubkeyAuthentication yes/PubkeyAuthentication yes/g' /etc/ssh/sshd_config
-sudo sed 's/#PermitEmptyPasswords no/PermitEmptyPasswords no/g' /etc/ssh/sshd_config
-sudo sed 's/#PasswordAuthentication yes/PasswordAuthentication no/g' /etc/ssh/sshd_config
-sudo sed '$aAllowUsers mrtshoot' /etc/ssh/sshd_config
-sudo sed 's/#Banner none/Banner \/etc\/ssh\/banner.txt/g' /etc/ssh/sshd_config
+sudo sed -i 's/#PermitRootLogin yes/PermitRootLogin no/g' /etc/ssh/sshd_config
+sudo sed -i 's/#PubkeyAuthentication yes/PubkeyAuthentication yes/g' /etc/ssh/sshd_config
+sudo sed -i 's/#PermitEmptyPasswords no/PermitEmptyPasswords no/g' /etc/ssh/sshd_config
+sudo sed -i 's/#PasswordAuthentication yes/PasswordAuthentication no/g' /etc/ssh/sshd_config
+sudo sed -i 's/PasswordAuthentication yes/PasswordAuthentication no/g' /etc/ssh/sshd_config
+sudo sed -i '$aAllowUsers mrtshoot' /etc/ssh/sshd_config
+sudo sed -i 's/#Banner none/Banner \/etc\/ssh\/banner.txt/g' /etc/ssh/sshd_config
 sudo mkdir /home/mrtshoot/.ssh
 sudo mkdir /home/ansible/.ssh
 sudo touch /home/mrtshoot/.ssh/authorized_keys
