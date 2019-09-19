@@ -1,5 +1,6 @@
 #!/bin/bash
-sudo touch /etc/ssh/banner.txt
+#sudo touch /etc/ssh/banner.txt
+sudo cp ssh_banner.txt /etc/ssh/banner.txt
 sudo sed 's/#PermitRootLogin yes/PermitRootLogin no/g' /etc/ssh/sshd_config
 sudo sed 's/#PubkeyAuthentication yes/PubkeyAuthentication yes/g' /etc/ssh/sshd_config
 sudo sed 's/#PermitEmptyPasswords no/PermitEmptyPasswords no/g' /etc/ssh/sshd_config
@@ -16,5 +17,4 @@ sudo chown root:root /home/mrtshoot/.ssh/authorized_keys
 sudo chown root:root /home/ansible/.ssh/authorized_keys
 sudo cp .ssh_keys /home/mrtshoot/.ssh/authorized_keys
 sudo cp .ssh_keys /home/ansible/.ssh/authorized_keys
-sudo cp ssh_banner.txt /etc/ssh/banner.txt
 exit 0

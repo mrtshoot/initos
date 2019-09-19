@@ -11,4 +11,20 @@ sudo pip3.6 install --upgrade pip &&\
 sudo yum install ntp -y &&\
 sudo yum install expect -y &&\
 sudo yum install net-tools -y &&\
+sudo yum install htop net-tools vim -y
+sudo yum remove -y docker \
+                  docker-client \
+                  docker-client-latest \
+                  docker-common \
+                  docker-latest \
+                  docker-latest-logrotate \
+                  docker-logrotate \
+                  docker-engine
+  device-mapper-persistent-data \
+  lvm2
+sudo yum-config-manager \
+    --add-repo \
+    https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum install -y docker-ce docker-ce-cli containerd.io
+
 exit 0
