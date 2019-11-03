@@ -1,0 +1,70 @@
+##############################################
+#################TEST#########################
+##############################################
+[C1]
+c1 ansible_user=mrtshoot ansible_port=22
+[C2]
+c2 ansible_user=mrtshoot ansible_port=22
+[TEST]
+c1 ansible_user=mrtshoot ansible_port=22
+c2 ansible_user=mrtshoot ansible_port=22
+##############################################
+############MOBTAKER.LOCAL####################
+##############################################
+[GIT]
+git.local ansible_user=mrtshoot ansible_port=22
+[ETOD]
+etod.local ansible_user=mrtshoot ansible_port=22
+[IDO]
+ido.local ansible_user=mrtshoot ansible_port=22
+[IDO-PWA]
+ido-pwa.local ansible_user=mrtshoot ansible_port=22
+[MOBTAKERCARD]
+mobtakercard.local ansible_user=mrtshoot ansible_port=22
+[REGISTRY]
+registry.local ansible_user=mrtshoot ansible_port=22
+[ZABBIX]
+zabbix.local ansible_user=mrtshoot ansible_port=22
+[MOBTAKER.LOCAL]
+git.local ansible_user=mrtshoot ansible_port=22
+etod.local ansible_user=mrtshoot ansible_port=22
+ido.local ansible_user=mrtshoot ansible_port=22
+ido-pwa.local ansible_user=mrtshoot ansible_port=22
+mobtakercard.local ansible_user=mrtshoot ansible_port=22
+registry.local ansible_user=mrtshoot ansible_port=22
+zabbix.local ansible_user=mrtshoot ansible_port=22
+##############################################
+############MOBTAKER.REMOTE###################
+##############################################
+[DNS]
+dns.remote ansible_user=mrtshoot ansible_port=59286
+[REGISTRY]
+registry.remote ansible_user=mrtshoot ansible_port=22
+[ETOD]
+etod.remote ansible_user=mrtshoot ansible_port=59286
+[IDO]
+ido.remote ansible_user=mrtshoot ansible_port=59286
+[IDO-PWA]
+ido-pwa.remote ansible_user=mrtshoot ansible_port=59286
+[MAIL]
+mail.remote ansible_user=mrtshoot ansible_port=59286
+[MOBOTEL]
+mobotel.remote ansible_user=mrtshoot ansible_port=59286
+[MOBTAKER.REMOTE]
+dns.remote ansible_user=mrtshoot ansible_port=59286
+registry.remote ansible_user=mrtshoot ansible_port=22
+etod.remote ansible_user=mrtshoot ansible_port=22
+ido.remote ansible_user=mrtshoot ansible_port=22
+ido-pwa.remote ansible_user=mrtshoot ansible_port=22
+mail.remote ansible_user=mrtshoot ansible_port=59286
+mobotel.remote ansible_user=mrtshoot ansible_port=5928
+##############################################
+##################VPS#########################
+##############################################
+[VPN]
+vpn.remote ansible_user=mrtshoot ansible_port=59286
+[TELEGRAM]
+telegram.remote  ansible_user=mrtshoot ansible_port=59286
+[VPS]
+vpn.remote ansible_user=mrtshoot ansible_port=59286
+telegram.remote  ansible_user=mrtshoot ansible_port=59286
