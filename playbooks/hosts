@@ -3,28 +3,37 @@
 ##############################################
 [C1]
 c1 ansible_user=mrtshoot ansible_port=22
+
 [C2]
 c2 ansible_user=mrtshoot ansible_port=22
+
 [TEST]
 c1 ansible_user=mrtshoot ansible_port=22
 c2 ansible_user=mrtshoot ansible_port=22
 ##############################################
 ############MOBTAKER.LOCAL####################
 ##############################################
-[GIT]
+[GIT.LOCAL]
 git.local ansible_user=mrtshoot ansible_port=22
-[ETOD]
+
+[ETOD.LOCAL]
 etod.local ansible_user=mrtshoot ansible_port=22
-[IDO]
+
+[IDO.LOCAL]
 ido.local ansible_user=mrtshoot ansible_port=22
-[IDO-PWA]
+
+[IDO-PWA.LOCAL]
 ido-pwa.local ansible_user=mrtshoot ansible_port=22
-[MOBTAKERCARD]
+
+[MOBTAKERCARD.LOCAL]
 mobtakercard.local ansible_user=mrtshoot ansible_port=22
-[REGISTRY]
+
+[REGISTRY.LOCAL]
 registry.local ansible_user=mrtshoot ansible_port=22
-[ZABBIX]
+
+[ZABBIX.LOCAL]
 zabbix.local ansible_user=mrtshoot ansible_port=22
+
 [MOBTAKER.LOCAL]
 git.local ansible_user=mrtshoot ansible_port=22
 etod.local ansible_user=mrtshoot ansible_port=22
@@ -36,20 +45,27 @@ zabbix.local ansible_user=mrtshoot ansible_port=22
 ##############################################
 ############MOBTAKER.REMOTE###################
 ##############################################
-[DNS]
+[DNS.REMOTE]
 dns.remote ansible_user=mrtshoot ansible_port=59286
-[REGISTRY]
+
+[REGISTRY.REMOTE]
 registry.remote ansible_user=mrtshoot ansible_port=22
-[ETOD]
+
+[ETOD.REMOTE]
 etod.remote ansible_user=mrtshoot ansible_port=59286
-[IDO]
+
+[IDO.REMOTE]
 ido.remote ansible_user=mrtshoot ansible_port=59286
-[IDO-PWA]
+
+[IDO-PWA.REMOTE]
 ido-pwa.remote ansible_user=mrtshoot ansible_port=59286
-[MAIL]
+
+[MAIL.REMOTE]
 mail.remote ansible_user=mrtshoot ansible_port=59286
-[MOBOTEL]
+
+[MOBOTEL.REMOTE]
 mobotel.remote ansible_user=mrtshoot ansible_port=59286
+
 [MOBTAKER.REMOTE]
 dns.remote ansible_user=mrtshoot ansible_port=59286
 registry.remote ansible_user=mrtshoot ansible_port=22
@@ -61,10 +77,12 @@ mobotel.remote ansible_user=mrtshoot ansible_port=5928
 ##############################################
 ##################VPS#########################
 ##############################################
-[VPN]
+[VPN.REMOTE]
 vpn.remote ansible_user=mrtshoot ansible_port=59286
-[TELEGRAM]
+
+[TELEGRAM.REMOTE]
 telegram.remote  ansible_user=mrtshoot ansible_port=59286
-[VPS]
+
+[VPS.REMOTE]
 vpn.remote ansible_user=mrtshoot ansible_port=59286
 telegram.remote  ansible_user=mrtshoot ansible_port=59286
