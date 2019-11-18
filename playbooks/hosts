@@ -73,7 +73,7 @@ etod.remote ansible_user=mrtshoot ansible_port=22
 ido.remote ansible_user=mrtshoot ansible_port=22
 ido-pwa.remote ansible_user=mrtshoot ansible_port=22
 mail.remote ansible_user=mrtshoot ansible_port=59286
-mobotel.remote ansible_user=mrtshoot ansible_port=5928
+mobotel.remote ansible_user=mrtshoot ansible_port=59286
 ##############################################
 ##################VPS#########################
 ##############################################
