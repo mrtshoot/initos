@@ -1,0 +1,6 @@
+- name: Update Operating System
+  hosts: MOBTAKER.REMOTE
+  become: True
+  tasks:
+  - name: Update only Security Feature on All Packages
+    yum: update_only=yes security=yes state=latest
