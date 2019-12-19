@@ -55,43 +55,51 @@ sentry.mobtaker.local ansible_user=mrtshoot ansible_port=22
 ############MOBTAKER.REMOTE###################
 ##############################################
 [DNS.REMOTE]
-dns.remote ansible_user=mrtshoot ansible_port=59286
+dns.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
 
 [REGISTRY.REMOTE]
-registry.remote ansible_user=mrtshoot ansible_port=22
+registry.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 
 [ETOD.REMOTE]
-etod.remote ansible_user=mrtshoot ansible_port=59286
+etod.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
 
 [IDO.REMOTE]
-ido.remote ansible_user=mrtshoot ansible_port=59286
+ido.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
 
 [IDO-PWA.REMOTE]
-ido-pwa.remote ansible_user=mrtshoot ansible_port=59286
-
-[MAIL.REMOTE]
-mail.remote ansible_user=mrtshoot ansible_port=59286
+ido-pwa.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
 
 [MOBOTEL.REMOTE]
-mobotel.remote ansible_user=mrtshoot ansible_port=59286
+mobotel.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
+
+[MALPAY.MOBTAKE.LOCAL]
+malpay.mobtaker.local ansible_user=mrtshoot ansible_port=22
+
+[HERON.MOBTAKER.LOCAL]
+heron.mobtaker.local ansible_user=mrtshoot ansible_port=22
+
+[MOBTAKERCARD.MOBTAKER.LOCAL]
+mobtakercard.mobtaker.local ansible_user=mrtshoot ansible_port=22
 
 [MOBTAKER.REMOTE]
-dns.remote ansible_user=mrtshoot ansible_port=59286
-#registry.remote ansible_user=mrtshoot ansible_port=22
-etod.remote ansible_user=mrtshoot ansible_port=22
-ido.remote ansible_user=mrtshoot ansible_port=22
-ido-pwa.remote ansible_user=mrtshoot ansible_port=22
-mail.remote ansible_user=mrtshoot ansible_port=59286
-mobotel.remote ansible_user=mrtshoot ansible_port=59286
+dns.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
+etod.mobtaker.remote ansible_user=mrtshoot ansible_port=22
+ido.mobtaker.remote ansible_user=mrtshoot ansible_port=22
+ido-pwa.mobtaker.remote ansible_user=mrtshoot ansible_port=22
+mobtakercard.mobtaker.remote ansible_user=mrtshoot ansible_port=22
+wallto.mobtaker.remote ansible_user=mrtshoot ansible_port=22
+mobotel.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
+heron.mobtaker.remote ansible_user=mrtshoot ansible_port=22
+malpay.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 ##############################################
 ##################VPS#########################
 ##############################################
-[VPN.REMOTE]
-vpn.remote ansible_user=mrtshoot ansible_port=59286
+[VPN.MOBTAKER.REMOTE]
+vpn.mobtaker.remote ansible_user=mrtshoot ansible_port=49832
 
-[TELEGRAM.REMOTE]
-telegram.remote  ansible_user=mrtshoot ansible_port=59286
+[TELEGRAM.MOBTAKER.REMOTE]
+telegram.mobtaker.remote  ansible_user=mrtshoot ansible_port=59286
 
-[VPS.REMOTE]
-vpn.remote ansible_user=mrtshoot ansible_port=59286
-telegram.remote  ansible_user=mrtshoot ansible_port=59286
+[VPS.MOBTAKER.REMOTE]
+vpn.mobtaker.remote ansible_user=mrtshoot ansible_port=49832
+telegram.mobtaker.remote  ansible_user=mrtshoot ansible_port=59286
