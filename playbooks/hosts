@@ -27,7 +27,7 @@ registry.mobtaker.local ansible_user=mrtshoot ansible_port=22
 zabbix.mobtaker.local ansible_user=mrtshoot ansible_port=22
 
 [HERON.MOBTAKER.LOCAL]
-herron.mobtaker.local ansible_user=mrtshoot ansible_port=22
+heron.mobtaker.local ansible_user=mrtshoot ansible_port=22
 
 [JENKINS.MOBTAKER.LOCAL]
 jenkins.mobtaker.local ansible_user=mrtshoot ansible_port=22
@@ -47,7 +47,7 @@ ido-pwa.mobtaker.local ansible_user=mrtshoot ansible_port=22
 mobtakercard.mobtaker.local ansible_user=mrtshoot ansible_port=22
 registry.mobtaker.local ansible_user=mrtshoot ansible_port=22
 zabbix.mobtaker.local ansible_user=mrtshoot ansible_port=22
-herron.mobtaker.local ansible_user=mrtshoot ansible_port=22
+heron.mobtaker.local ansible_user=mrtshoot ansible_port=22
 jenkins.mobtaker.local ansible_user=mrtshoot ansible_port=22
 malpay.mobtaker.local ansible_user=mrtshoot ansible_port=22
 sentry.mobtaker.local ansible_user=mrtshoot ansible_port=22
