@@ -1,0 +1,24 @@
+---
+- name: Transfer and execute a script.
+  hosts: ETOD.MOBTAKER.LOCAL
+  become: yes
+  tasks:
+     - name: Transfer the script
+       copy: src=/opt/init_os/scripts/{{ item }} dest=/tmp  mode=0777
+       with_items:
+         - "change_sshkeys"
+         - ".ssh_keys_mrtshoot"
+         - ".ssh_keys_developer"
+
+     - name: Execute the script
+       command: sh /tmp/change_sshkeys
+
+     - name: Remove SSH_KEYS
+       file: path=/tmp/{{ item }} state=absent
+       with_items:
+         - "change_sshkeys"
+         - ".ssh_keys_mrtshoot"
+         - ".ssh_keys_developer"
+     
+     - name: Restart Service SSHDaemon
+       service: name=sshd state=restarted
