@@ -1,6 +1,6 @@
 ---
-- name: Transfer and execute a script.
-  hosts: ETOD.MOBTAKER.LOCAL
+- name: Transfer and execute a SSH script with MrTshoot PlayBooks.
+  hosts: VPS.MOBTAKER.REMOTE
   become: yes
   tasks:
      - name: Transfer the script
