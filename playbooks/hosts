@@ -1,47 +1,56 @@
 ##############################################
 #################TEST#########################
 ##############################################
-[C1]
-c1 ansible_user=mrtshoot ansible_port=22
-
-[C2]
-c2 ansible_user=mrtshoot ansible_port=22
-
-[TEST]
-c1 ansible_user=mrtshoot ansible_port=22
-c2 ansible_user=mrtshoot ansible_port=22
+#
 ##############################################
 ############MOBTAKER.LOCAL####################
 ##############################################
-[GIT.LOCAL]
-git.local ansible_user=mrtshoot ansible_port=22
+[GIT.MOBTAKER.LOCAL]
+git.mobtaker.local ansible_user=mrtshoot ansible_port=22
 
-[ETOD.LOCAL]
-etod.local ansible_user=mrtshoot ansible_port=22
+[ETOD.MOBTAKER.LOCAL]
+etod.mobtaker.local ansible_user=mrtshoot ansible_port=22
 
-[IDO.LOCAL]
-ido.local ansible_user=mrtshoot ansible_port=22
+[IDO.MOBTAKER.LOCAL]
+ido.mobtaker.local ansible_user=mrtshoot ansible_port=22
 
-[IDO-PWA.LOCAL]
-ido-pwa.local ansible_user=mrtshoot ansible_port=22
+[IDO-PWA.MOBTAKER.LOCAL]
+ido-pwa.mobtaker.local ansible_user=mrtshoot ansible_port=22
 
-[MOBTAKERCARD.LOCAL]
-mobtakercard.local ansible_user=mrtshoot ansible_port=22
+[MOBTAKERCARD.MOBTAKER.LOCAL]
+mobtakercard.mobtaker.local ansible_user=mrtshoot ansible_port=22
 
-[REGISTRY.LOCAL]
-registry.local ansible_user=mrtshoot ansible_port=22
+[REGISTRY.MOBTAKER.LOCAL]
+registry.mobtaker.local ansible_user=mrtshoot ansible_port=22
 
-[ZABBIX.LOCAL]
-zabbix.local ansible_user=mrtshoot ansible_port=22
+[ZABBIX.MOBTAKER.LOCAL]
+zabbix.mobtaker.local ansible_user=mrtshoot ansible_port=22
+
+[HERON.MOBTAKER.LOCAL]
+herron.mobtaker.local ansible_user=mrtshoot ansible_port=22
+
+[JENKINS.MOBTAKER.LOCAL]
+jenkins.mobtaker.local ansible_user=mrtshoot ansible_port=22
+
+[MALPAY.MOBTAKE.LOCAL]
+malpay.mobtaker.local ansible_user=mrtshoot ansible_port=22
+
+[SENTRY.MOBTAKER.LOCAL]
+sentry.mobtaker.local ansible_user=mrtshoot ansible_port=22
+
 
 [MOBTAKER.LOCAL]
-git.local ansible_user=mrtshoot ansible_port=22
-etod.local ansible_user=mrtshoot ansible_port=22
-ido.local ansible_user=mrtshoot ansible_port=22
-ido-pwa.local ansible_user=mrtshoot ansible_port=22
-mobtakercard.local ansible_user=mrtshoot ansible_port=22
-registry.local ansible_user=mrtshoot ansible_port=22
-zabbix.local ansible_user=mrtshoot ansible_port=22
+git.mobtaker.local ansible_user=mrtshoot ansible_port=22
+etod.mobtaker.local ansible_user=mrtshoot ansible_port=22
+ido.mobtaker.local ansible_user=mrtshoot ansible_port=22
+ido-pwa.mobtaker.local ansible_user=mrtshoot ansible_port=22
+mobtakercard.mobtaker.local ansible_user=mrtshoot ansible_port=22
+registry.mobtaker.local ansible_user=mrtshoot ansible_port=22
+zabbix.mobtaker.local ansible_user=mrtshoot ansible_port=22
+herron.mobtaker.local ansible_user=mrtshoot ansible_port=22
+jenkins.mobtaker.local ansible_user=mrtshoot ansible_port=22
+malpay.mobtaker.local ansible_user=mrtshoot ansible_port=22
+sentry.mobtaker.local ansible_user=mrtshoot ansible_port=22
 ##############################################
 ############MOBTAKER.REMOTE###################
 ##############################################
@@ -68,7 +77,7 @@ mobotel.remote ansible_user=mrtshoot ansible_port=59286
 
 [MOBTAKER.REMOTE]
 dns.remote ansible_user=mrtshoot ansible_port=59286
-registry.remote ansible_user=mrtshoot ansible_port=22
+#registry.remote ansible_user=mrtshoot ansible_port=22
 etod.remote ansible_user=mrtshoot ansible_port=22
 ido.remote ansible_user=mrtshoot ansible_port=22
 ido-pwa.remote ansible_user=mrtshoot ansible_port=22
