@@ -1,5 +1,5 @@
 ---
-- name: Transfer and execute a SSH script with MrTshoot PlayBooks.
+- name: Transfer and Execute a SSH Scripts with MrTshoot PlayBooks.
   hosts: VPS.MOBTAKER.REMOTE
   become: yes
   tasks:
