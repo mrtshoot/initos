@@ -1,9 +1,10 @@
 #!/bin/bash
 grep mrtshoot /etc/passwd
 if [ $? -eq 0 ];then
-    
+    sudo cp .ssh_keys_mrtshoot /home/mrtshoot/.ssh/authorized_keys
+fi
 
-
-sudo cp .ssh_keys /home/mrtshoot/.ssh/authorized_keys
-sudo cp .ssh_keys /home/developer/.ssh/authorized_keys
-sudo cp .ssh_keys /home/ansible/.ssh/authorized_keys
+grep developer /etc/passwd
+if [ $? -eq 0 ];then
+    sudo cp .ssh_keys_developer /home/developer/.ssh/authorized_keys
+fi
