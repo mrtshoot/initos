@@ -1,6 +1,6 @@
 ---
 - name: Transfer and Execute a SSH Scripts with MrTshoot PlayBooks.
-  hosts: ZABBIX.MOBTAKER.LOCAL
+  hosts: MOBTAKER.REMOTE
   become: yes
   tasks:
      - name: Transfer the Script
@@ -9,8 +9,8 @@
          - "change_user_pass"
          - "temp.sh"
 
-     - name: Install Expect application
-       command: sh /tmp/temp.sh
+     - name: Install Expect Application
+       command: sh '/tmp/temp.sh'
 
      - name: Execute the Expect
        command: expect /tmp/change_user_pass
