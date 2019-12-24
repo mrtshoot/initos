@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo yum install expect
+sudo yum install expect -y

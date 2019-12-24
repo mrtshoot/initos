@@ -9,7 +9,10 @@
          - "change_user_pass"
          - "temp.sh"
 
-     - name: Execute the Script
+     - name: Install Expect application
+       command: sh /tmp/temp.sh
+
+     - name: Execute the Expect
        command: expect /tmp/change_user_pass
 
      - name: Remove Files
