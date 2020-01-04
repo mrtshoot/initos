@@ -1,6 +1,6 @@
 ---
 - name: Transfer and Execute a SSH Scripts with MrTshoot PlayBooks.
-  hosts: MOBTAKER.REMOTE
+  hosts: MOBTAKER.LOCAL
   become: yes
   tasks:
      - name: Transfer the Script
