@@ -1,25 +1,24 @@
 ---
-- name: Transfer and Execute a SSH Scripts with MrTshoot PlayBooks.
-  hosts: MOBTAKER.LOCAL
+- name: Transfer and Change Host Files.
+  hosts: SENTRY.MOBTAKER.LOCAL
   become: yes
   tasks:
-     - name: Transfer the Script
-       copy: src=/opt/init_os/scripts/{{ item }} dest=/tmp  mode=0777
+     - name: Transfer the Files
+       copy: src=/opt/init_os/files/{{ item }} dest=/etc/  mode=0644
        with_items:
-         - "change_user_pass"
-         - "temp.sh"
+         - "hosts"
 
-     - name: Install Expect Application
-       command: sh '/tmp/temp.sh'
+#     - name: Install Expect Application
+#       command: sh '/tmp/temp.sh'
 
-     - name: Execute the Expect
-       command: expect /tmp/change_user_pass
+#     - name: Execute the Expect
+#       command: expect /tmp/change_user_pass
 
-     - name: Remove Files
-       file: path=/tmp/{{ item }} state=absent
-       with_items:
-         - "change_user_pass"
-         - "temp.sh"
+#     - name: Remove Files
+#       file: path=/tmp/{{ item }} state=absent
+#       with_items:
+#         - "change_user_pass"
+#         - "temp.sh"
      
 #     - name: Restart Service SSHDaemon
 #       service: name=sshd state=restarted
