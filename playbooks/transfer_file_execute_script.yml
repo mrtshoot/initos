@@ -1,24 +1,25 @@
 ---
 - name: Transfer and Change Host Files.
-  hosts: SENTRY.MOBTAKER.LOCAL
+  hosts: VPS.MOBTAKER.REMOTE
   become: yes
   tasks:
-     - name: Transfer the Files
-       copy: src=/opt/init_os/files/{{ item }} dest=/etc/  mode=0644
-       with_items:
-         - "hosts"
+    - name: Install NTP Application
+      yum:
+        name: ntp
+        state: present
 
-#     - name: Install Expect Application
-#       command: sh '/tmp/temp.sh'
+    - name: Transfer the Files and Execute on Remote Host
+      copy: src=/opt/init_os/files/{{ item }} dest=/etc/  mode=0777
+      with_items:
+         - "ntp.conf"
 
-#     - name: Execute the Expect
-#       command: expect /tmp/change_user_pass
+#     - name: Copy Config of NTP
+#       command: sh 'cp /tmp/ntp.conf /etc/ntp.conf'
 
-#     - name: Remove Files
-#       file: path=/tmp/{{ item }} state=absent
-#       with_items:
-#         - "change_user_pass"
-#         - "temp.sh"
+    - name: Remove Files
+      file: path=/tmp/{{ item }} state=absent
+      with_items:
+        - "ntp.conf"
      
-#     - name: Restart Service SSHDaemon
-#       service: name=sshd state=restarted
+    - name: Restart Service NTP Daemon
+      service: name=ntpd state=restarted

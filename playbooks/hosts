@@ -26,8 +26,8 @@ registry.mobtaker.local ansible_user=mrtshoot ansible_port=22
 [ZABBIX.MOBTAKER.LOCAL]
 zabbix.mobtaker.local ansible_user=mrtshoot ansible_port=22
 
-[ARIO.MOBTAKER.LOCAL]
-ario.mobtaker.local ansible_user=mrtshoot ansible_port=22
+[ARION.MOBTAKER.LOCAL]
+arion.mobtaker.local ansible_user=mrtshoot ansible_port=22
 
 #[JENKINS.MOBTAKER.LOCAL]
 #jenkins.mobtaker.local ansible_user=mrtshoot ansible_port=22
@@ -47,7 +47,7 @@ ido-pwa.mobtaker.local ansible_user=mrtshoot ansible_port=22
 mobtakercard.mobtaker.local ansible_user=mrtshoot ansible_port=22
 registry.mobtaker.local ansible_user=mrtshoot ansible_port=22
 zabbix.mobtaker.local ansible_user=mrtshoot ansible_port=22
-ario.mobtaker.local ansible_user=mrtshoot ansible_port=22
+arion.mobtaker.local ansible_user=mrtshoot ansible_port=22
 #jenkins.mobtaker.local ansible_user=mrtshoot ansible_port=22
 minimum.mobtaker.local ansible_user=mrtshoot ansible_port=22
 sentry.mobtaker.local ansible_user=mrtshoot ansible_port=22
@@ -75,8 +75,8 @@ mobotel.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
 [MINIMUM.MOBTAKE.REMOTE]
 minimum.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 
-[ARIO.MOBTAKER.REMOTE]
-ario.mobtaker.remote ansible_user=mrtshoot ansible_port=22
+[ARION.MOBTAKER.REMOTE]
+arion.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 
 [MOBTAKERCARD.MOBTAKER.REMOTE]
 mobtakercard.mobtaker.remote ansible_user=mrtshoot ansible_port=22
@@ -89,7 +89,7 @@ ido-pwa.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 mobtakercard.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 wallto.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 mobotel.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
-ario.mobtaker.remote ansible_user=mrtshoot ansible_port=22
+arion.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 minimum.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 #telegram.mobtaker.remote  ansible_user=mrtshoot ansible_port=59286
 #vpn.mobtaker.remote ansible_user=mrtshoot ansible_port=49832
@@ -97,11 +97,11 @@ minimum.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 ##################VPS#########################
 ##############################################
 [VPN.MOBTAKER.REMOTE]
-vpn.mobtaker.remote ansible_user=mrtshoot ansible_port=49832
+vpn.mobtaker.remote ansible_user=mrtshoot ansible_port=54213
 
 [TELEGRAM.MOBTAKER.REMOTE]
 telegram.mobtaker.remote  ansible_user=mrtshoot ansible_port=59286
 
 [VPS.MOBTAKER.REMOTE]
-vpn.mobtaker.remote ansible_user=mrtshoot ansible_port=49832
+vpn.mobtaker.remote ansible_user=mrtshoot ansible_port=54213
 telegram.mobtaker.remote  ansible_user=mrtshoot ansible_port=59286
