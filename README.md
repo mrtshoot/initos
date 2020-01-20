@@ -15,3 +15,4 @@ mrtshoot@gmail.com
 3.add your host to ansible hosts directive
 4.add your directive to playbooks/init.yml host section
 5.run "bash init.sh"
+6.reboot your server
