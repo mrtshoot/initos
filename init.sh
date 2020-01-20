@@ -1,1 +1,1 @@
-ansible-playbook -i playbooks/hosts playbooks/init.yml
+ansible-playbook -i playbooks/hosts.init playbooks/init.yml
