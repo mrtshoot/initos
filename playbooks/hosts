@@ -1,7 +1,8 @@
 ##############################################
 #################TEST#########################
 ##############################################
-#
+[MOBTAKER.TEST]
+test.mobtaker.local ansible_user=mrtshoot ansible_port=22
 ##############################################
 ############MOBTAKER.LOCAL####################
 ##############################################
@@ -20,8 +21,8 @@ ido-pwa.mobtaker.local ansible_user=mrtshoot ansible_port=22
 [MOBTAKERCARD.MOBTAKER.LOCAL]
 mobtakercard.mobtaker.local ansible_user=mrtshoot ansible_port=22
 
-[REGISTRY.MOBTAKER.LOCAL]
-registry.mobtaker.local ansible_user=mrtshoot ansible_port=22
+[LOCALHUB.ETOD.ME]
+localhub.etod.me ansible_user=mrtshoot ansible_port=22
 
 [ZABBIX.MOBTAKER.LOCAL]
 zabbix.mobtaker.local ansible_user=mrtshoot ansible_port=22
@@ -45,7 +46,7 @@ etod.mobtaker.local ansible_user=mrtshoot ansible_port=22
 ido.mobtaker.local ansible_user=mrtshoot ansible_port=22
 ido-pwa.mobtaker.local ansible_user=mrtshoot ansible_port=22
 mobtakercard.mobtaker.local ansible_user=mrtshoot ansible_port=22
-registry.mobtaker.local ansible_user=mrtshoot ansible_port=22
+localhub.etod.me ansible_user=mrtshoot ansible_port=22
 zabbix.mobtaker.local ansible_user=mrtshoot ansible_port=22
 arion.mobtaker.local ansible_user=mrtshoot ansible_port=22
 #jenkins.mobtaker.local ansible_user=mrtshoot ansible_port=22
@@ -57,8 +58,8 @@ sentry.mobtaker.local ansible_user=mrtshoot ansible_port=22
 [DNS.MOBTAKER.REMOTE]
 dns.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
 
-[REGISTRY.MOBTAKER.REMOTE]
-registry.mobtaker.remote ansible_user=mrtshoot ansible_port=22
+[REMOTEHUB.ETOD.ME]
+remotehub.etod.me ansible_user=mrtshoot ansible_port=22
 
 [ETOD.MOBTAKER.REMOTE]
 etod.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
@@ -83,6 +84,7 @@ mobtakercard.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 
 [MOBTAKER.REMOTE]
 dns.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
+remotehub.etod.me ansible_user=mrtshoot ansible_port=22
 etod.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 ido.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 ido-pwa.mobtaker.remote ansible_user=mrtshoot ansible_port=22
