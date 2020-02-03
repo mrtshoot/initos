@@ -1,11 +1,13 @@
 ---
 - name: Transfer and Execute File
-  hosts: MOBTAKER.REMOTE
+  hosts: MOBOTEL.MOBTAKER.REMOTE
   become: yes
   tasks:
 
     - name: Transfer the Files on Remote Host
       copy: src=/opt/init_os/files/{{ item }} dest=/etc/  mode=0777
       with_items:
-        - "hosts"
+        - "ntp.conf"
 
+    - name: Restart Service NTP
+      service: name=ntpd state=restarted

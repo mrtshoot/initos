@@ -1,7 +1,5 @@
 ##############################################
 #################TEST#########################
 ##############################################
-[MOBTAKER.TEST]
-test.mobtaker.local ansible_user=root ansible_port=22
-[MOBTAKER.ETOD]
-etod2.mobtaker.local ansible_user=root ansible_port=22
+[CENTOS7-DJANGO]
+centos7-django.mobtaker.local ansible_user=root ansible_port=22

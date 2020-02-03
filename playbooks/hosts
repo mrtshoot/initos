@@ -1,8 +1,8 @@
 ##############################################
 #################TEST#########################
 ##############################################
-[MOBTAKER.TEST]
-test.mobtaker.local ansible_user=mrtshoot ansible_port=22
+[CENTOS7-DJANGO]
+centos7-django.mobtaker.local ansible_user=mrtshoot ansible_port=22
 ##############################################
 ############MOBTAKER.LOCAL####################
 ##############################################
@@ -11,6 +11,9 @@ git.mobtaker.local ansible_user=mrtshoot ansible_port=22
 
 [ETOD.MOBTAKER.LOCAL]
 etod.mobtaker.local ansible_user=mrtshoot ansible_port=22
+
+[ETOD2.MOBTAKER.LOCAL]
+etod2.mobtaker.local ansible_user=mrtshoot ansible_port=22
 
 [IDO.MOBTAKER.LOCAL]
 ido.mobtaker.local ansible_user=mrtshoot ansible_port=22
@@ -43,15 +46,17 @@ sentry.mobtaker.local ansible_user=mrtshoot ansible_port=22
 [MOBTAKER.LOCAL]
 git.mobtaker.local ansible_user=mrtshoot ansible_port=22
 etod.mobtaker.local ansible_user=mrtshoot ansible_port=22
+etod2.mobtaker.local ansible_user=mrtshoot ansible_port=22
 ido.mobtaker.local ansible_user=mrtshoot ansible_port=22
 ido-pwa.mobtaker.local ansible_user=mrtshoot ansible_port=22
 mobtakercard.mobtaker.local ansible_user=mrtshoot ansible_port=22
 localhub.etod.me ansible_user=mrtshoot ansible_port=22
-zabbix.mobtaker.local ansible_user=mrtshoot ansible_port=22
 arion.mobtaker.local ansible_user=mrtshoot ansible_port=22
 #jenkins.mobtaker.local ansible_user=mrtshoot ansible_port=22
 minimum.mobtaker.local ansible_user=mrtshoot ansible_port=22
 sentry.mobtaker.local ansible_user=mrtshoot ansible_port=22
+#zabbix.mobtaker.local ansible_user=mrtshoot ansible_port=22
+
 ##############################################
 ############MOBTAKER.REMOTE###################
 ##############################################
@@ -89,7 +94,7 @@ etod.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 ido.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 ido-pwa.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 mobtakercard.mobtaker.remote ansible_user=mrtshoot ansible_port=22
-wallto.mobtaker.remote ansible_user=mrtshoot ansible_port=22
+#wallto.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 mobotel.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
 arion.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 minimum.mobtaker.remote ansible_user=mrtshoot ansible_port=22

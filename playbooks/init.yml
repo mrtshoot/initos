@@ -1,6 +1,6 @@
 ---
 - name: Init OS Version 2.0.0 Maintainer MrTshoot
-  hosts: MOBTAKER.TEST
+  hosts: CENTOS7-DJANGO
   become: yes
   tasks:
 

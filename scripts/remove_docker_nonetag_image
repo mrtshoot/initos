@@ -1,0 +1,13 @@
+#!/bin/bash
+#set -x
+nontags=$( docker images | awk '/none/{print$3}' )
+if [ -z $nontags ]
+then
+  echo "Buy"
+  exit 0
+else
+  for i in $nontags
+    do
+    docker rmi $i
+done
+fi

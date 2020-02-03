@@ -1,0 +1,14 @@
+---
+- name: Transfer and Execute Non Tag Images
+  hosts: MOBTAKER.LOCAL
+  become: yes
+  tasks:
+
+    - name: Transfer Script
+      copy: src=/opt/init_os/scripts/remove_docker_nonetag_image dest=/tmp  mode=0777
+
+    - name: Execute Script
+      command: sh '/tmp/remove_docker_nonetag_image'
+
+    - name: Delete Script
+      file: path=/tmp/remove_docker_nonetag_image state=absent
