@@ -69,6 +69,9 @@ remotehub.etod.me ansible_user=mrtshoot ansible_port=22
 [ETOD.MOBTAKER.REMOTE]
 etod.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
 
+[ETOD2.MOBTAKER.REMOTE]
+etod2.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
+
 [IDO.MOBTAKER.REMOTE]
 ido.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
 
@@ -98,6 +101,7 @@ mobtakercard.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 mobotel.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
 arion.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 minimum.mobtaker.remote ansible_user=mrtshoot ansible_port=22
+etod2.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 #telegram.mobtaker.remote  ansible_user=mrtshoot ansible_port=59286
 #vpn.mobtaker.remote ansible_user=mrtshoot ansible_port=49832
 ##############################################
