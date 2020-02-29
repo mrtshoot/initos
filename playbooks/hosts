@@ -12,8 +12,8 @@ git.mobtaker.local ansible_user=mrtshoot ansible_port=22
 #[ETOD.MOBTAKER.LOCAL]
 #etod.mobtaker.local ansible_user=mrtshoot ansible_port=22
 
-[ETOD2.MOBTAKER.LOCAL]
-etod2.mobtaker.local ansible_user=mrtshoot ansible_port=22
+[APHRODATE.MOBTAKER.LOCAL]
+aphrodate.mobtaker.local ansible_user=mrtshoot ansible_port=22
 
 [IDO.MOBTAKER.LOCAL]
 ido.mobtaker.local ansible_user=mrtshoot ansible_port=22
@@ -46,7 +46,7 @@ sentry.mobtaker.local ansible_user=mrtshoot ansible_port=22
 [MOBTAKER.LOCAL]
 git.mobtaker.local ansible_user=mrtshoot ansible_port=22
 #etod.mobtaker.local ansible_user=mrtshoot ansible_port=22
-etod2.mobtaker.local ansible_user=mrtshoot ansible_port=22
+aphrodate.mobtaker.local ansible_user=mrtshoot ansible_port=22
 ido.mobtaker.local ansible_user=mrtshoot ansible_port=22
 ido-pwa.mobtaker.local ansible_user=mrtshoot ansible_port=22
 mobtakercard.mobtaker.local ansible_user=mrtshoot ansible_port=22
@@ -130,7 +130,7 @@ vpn.mobtaker.remote ansible_user=mrtshoot ansible_port=54213
 telegram.mobtaker.remote  ansible_user=mrtshoot ansible_port=59286
 
 [APHRODATE.MOBTAKER.REMOTE]
-aphrodate.mobtaker.remote ansible_user=mrtshoot ansible_port=22
+aphrodate.mobtaker.remote ansible_user=mrtshoot ansible_port=54213
 
 ##############################################
 #############ALL Mobtaker#####################
