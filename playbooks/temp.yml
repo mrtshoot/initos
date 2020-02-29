@@ -1,12 +1,13 @@
 ---
 - name: Transfer and Execute File
-  hosts: MOBTAKER.REMOTE
+  hosts: MOBTAKER.LOCAL
   become: yes
   tasks:
 
-    - name: Transfer the Files on Remote Host
+    - name: Date and Time Sync
       copy: src=/opt/init_os/files/{{ item }} dest=/etc/  mode=0777
-#      copy: src=/opt/init_os/files/{{ item }} dest=/etc/ mode=0777
+#      copy: src=/opt/init_os/files/{{ item }} dest=/etc/hosts mode=0777
+#      command: /sbin/shutdown -h now
       with_items:
         - "ntp.conf"
 

@@ -1,6 +1,6 @@
 ---
 - name: Init OS Version 2.0.0 Maintainer MrTshoot
-  hosts: CENTOS7-DJANGO
+  hosts: APHRODATE
   become: yes
   tasks:
 
