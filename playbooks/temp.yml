@@ -1,15 +1,15 @@
 ---
-- name: Transfer and Execute File
-  hosts: MOBTAKER.LOCAL
+- name: Transfer Host File
+  hosts: ALL
   become: yes
   tasks:
 
-    - name: Date and Time Sync
+    - name: Hostname
       copy: src=/opt/init_os/files/{{ item }} dest=/etc/  mode=0777
 #      copy: src=/opt/init_os/files/{{ item }} dest=/etc/hosts mode=0777
 #      command: /sbin/shutdown -h now
       with_items:
-        - "ntp.conf"
+        - "hosts"
 
-    - name: Restart Service NTP
-      service: name=ntpd state=restarted
+#    - name: Restart Service NTP
+#      service: name=ntpd state=restarted
