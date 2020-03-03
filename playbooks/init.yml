@@ -1,6 +1,6 @@
 ---
 - name: Init OS Version 2.0.0 Maintainer MrTshoot
-  hosts: APHRODATE-MINE.MOBTAKER.REMOTE
+  hosts: PROM.MOBTAKER.LOCAL
   become: yes
   tasks:
 
@@ -108,6 +108,15 @@
     
     - name: Remove Docker Installation File
       file: path=/tmp/install_docker.sh state=absent
+
+    - name: Transfer Docker Compose Installation File
+      copy: src=../scripts/install_docker_compose.sh dest=/tmp mode=0777
+
+    - name: Install Docker Compose
+      command: sh '/tmp/install_docker_compose.sh'
+
+    - name: Remove Docker Compose Installation File
+      file: path=/tmp/install_docker_compose.sh state=absent
 
     - name: Transfer Resolver and Hosts
       copy: src=../files/{{ item }} dest=/etc/  mode=0777

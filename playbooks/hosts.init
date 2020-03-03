@@ -1,6 +1,6 @@
 ##############################################
 #################TEST#########################
 ##############################################
-[APHRODATE-MINE.MOBTAKER.REMOTE]
-aphrodate-mine.mobtaker.remote ansible_user=root ansible_port=22
+[PROM]
+prom.mobtaker.local ansible_user=root ansible_port=22
 
