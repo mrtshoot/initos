@@ -1,6 +1,6 @@
 ##############################################
 #################TEST#########################
 ##############################################
-[PROM]
-prom.mobtaker.local ansible_user=root ansible_port=22
+[minimum-club]
+minimum-club.mobtaker.remote ansible_user=root ansible_port=22
 

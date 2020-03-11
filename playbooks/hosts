@@ -39,6 +39,9 @@ arion.mobtaker.local ansible_user=mrtshoot ansible_port=22
 [MINIMUM.MOBTAKE.LOCAL]
 minimum.mobtaker.local ansible_user=mrtshoot ansible_port=22
 
+[MINIMUM-CLUB.MOBTAKER.LOCAL]
+minimum-club.mobtaker.local ansible_user=mrtshoot ansible_port=22
+
 [SENTRY.MOBTAKER.LOCAL]
 sentry.mobtaker.local ansible_user=mrtshoot ansible_port=22
 
@@ -57,6 +60,7 @@ localhub.etod.me ansible_user=mrtshoot ansible_port=22
 arion.mobtaker.local ansible_user=mrtshoot ansible_port=22
 #jenkins.mobtaker.local ansible_user=mrtshoot ansible_port=22
 minimum.mobtaker.local ansible_user=mrtshoot ansible_port=22
+minimum-club.mobtaker.local ansible_user=mrtshoot ansible_port=22
 sentry.mobtaker.local ansible_user=mrtshoot ansible_port=22
 prom.mobtaker.local ansible_user=mrtshoot ansible_port=22
 #zabbix.mobtaker.local ansible_user=mrtshoot ansible_port=22
@@ -100,6 +104,9 @@ minimum-charge.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 [MINIMUM-GHABZ.MOBTAKE.REMOTE]
 minimum-ghabz.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 
+[MINIMUM-CLUB.MOBTAKE.REMOTE]
+minimum-club.mobtaker.remote ansible_user=mrtshoot ansible_port=22
+
 [ARION.MOBTAKER.REMOTE]
 arion.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 
@@ -120,6 +127,7 @@ minimum.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 minimum-aaniro.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 minimum-ghabz.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 minimum-charge.mobtaker.remote ansible_user=mrtshoot ansible_port=22
+minimum-club.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 etod2.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 aphrodate-mine.mobtaker.remote  ansible_user=mrtshoot ansible_port=22
 #telegram.mobtaker.remote  ansible_user=mrtshoot ansible_port=59286
@@ -164,4 +172,6 @@ minimum.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 minimum-aaniro.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 minimum-ghabz.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 minimum-charge.mobtaker.remote ansible_user=mrtshoot ansible_port=22
+minimum-club.mobtaker.local ansible_user=mrtshoot ansible_port=22
+minimum-club.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 #aphrodate.mobtaker.remote ansible_user=mrtshoot ansible_port=54213

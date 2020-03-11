@@ -11,6 +11,7 @@
 192.168.0.29            minimum.mobtaker.local
 192.168.0.30		etod2.mobtaker.local	aphrodate.mobtaker.local
 192.168.0.31		prom.mobtaker.local
+192.168.0.32		minimum-club.mobtaker.local
 192.168.0.140           etod.mobtaker.local
 192.168.0.141           git.mobtaker.local
 192.168.0.142           jenkins.mobtaker.local
@@ -29,6 +30,7 @@
 11.1.1.16       ido-pwa.mobtaker.remote
 11.1.1.23	aaniro.minimum.money  minimum-aaniro.mobtaker.remote
 11.1.1.25	aphrodate-mine.mobtaker.remote
+11.1.1.26	minimum-club.mobtaker.remote
 176.9.235.213   aphrodate.mobtaker.remote
 37.156.144.178  mobotel.mobtaker.remote mobotel.me
 185.49.86.190   dns.mobtaker.remote
