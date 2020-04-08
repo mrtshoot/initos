@@ -1,0 +1,9 @@
+---
+- name: Add host file
+  hosts: MOBTAKER.REMOTE
+  become: yes
+  tasks:
+    - name: Transfer hosts file
+      copy: src=/opt/init_os/files/{{ item  }} dest=/etc  mode=0777
+      with_items:
+        - "hosts"

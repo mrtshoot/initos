@@ -1,15 +1,25 @@
 ---
-- name: Transfer Host File
+- name: Add host file
   hosts: ALL
   become: yes
   tasks:
-
-    - name: Hostname
-      copy: src=/opt/init_os/files/{{ item }} dest=/etc/  mode=0777
+    - name: Transfer hosts file
+      copy: src=/opt/init_os/files/{{ item  }} dest=/etc  mode=0777
 #      copy: src=/opt/init_os/files/{{ item }} dest=/etc/hosts mode=0777
-#      command: /sbin/shutdown -h now
+#      command: /usr/bin/git
       with_items:
         - "hosts"
+#        - "prometheus_const.conf"
+#        - "temp.sh"
 
-#    - name: Restart Service NTP
-#      service: name=ntpd state=restarted
+#    - name: Execute Script
+#      command: /usr/bin/bash /tmp/script.sh
+
+#    - name: Remove Script
+#      file: path=/tmp/{{ item }} state=absent
+#      with_items:
+#        - "script.conf"
+#        - "prometheus_const.conf"
+#        - "temp.sh"
+#    - name: Restart Service SSH
+#      service: name=sshd state=restarted
