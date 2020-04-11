@@ -1,0 +1,11 @@
+---
+  - name: Add Route on OS
+    hosts: MOBTAKER.REMOTE
+    become: yes
+    tasks: 
+    - name: Upload Script to Servers
+      copy: src=../scripts/add_route.sh dest=/tmp mode=0777
+    - name: Execute Script on Servers
+      command: /usr/bin/bash /tmp/add_route.sh
+    - name: Delete Scripts from Servers
+      file: path=/tmp/add_route.sh state=absent

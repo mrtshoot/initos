@@ -1,0 +1,7 @@
+---
+  - name: Change Resolvers
+    hosts: MOBTAKER.LOCAL
+    become: yes
+    tasks:
+      - name: Transfer File
+        copy: src=../files/resolv.conf dest=/etc/ mode=0777

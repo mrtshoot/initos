@@ -60,7 +60,7 @@ minimum.mobtaker.local ansible_user=mrtshoot ansible_port=22
 minimum-club.mobtaker.local ansible_user=mrtshoot ansible_port=22
 sentry.mobtaker.local ansible_user=mrtshoot ansible_port=22
 prom.mobtaker.local ansible_user=mrtshoot ansible_port=22
-#zabbix.mobtaker.local ansible_user=mrtshoot ansible_port=22
+zabbix.mobtaker.local ansible_user=mrtshoot ansible_port=22
 
 ############MOBTAKER.REMOTE###################
 [DNS.MOBTAKER.REMOTE]
@@ -117,14 +117,12 @@ cronacrawler.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 [MOBTAKER.REMOTE]
 cronaweb.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 cronacrawler.mobtaker.remote ansible_user=mrtshoot ansible_port=22
-dns.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
 remotehub.etod.me ansible_user=mrtshoot ansible_port=22
 #etod.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 ido.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 ido-pwa.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 mobtakercard.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 #wallto.mobtaker.remote ansible_user=mrtshoot ansible_port=22
-mobotel.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
 arion.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 minimum.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 minimum-aaniro.mobtaker.remote ansible_user=mrtshoot ansible_port=22
@@ -133,8 +131,13 @@ minimum-charge.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 minimum-club.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 etod2.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 aphrodate-mine.mobtaker.remote  ansible_user=mrtshoot ansible_port=22
-#telegram.mobtaker.remote  ansible_user=mrtshoot ansible_port=59286
-#vpn.mobtaker.remote ansible_user=mrtshoot ansible_port=49832
+
+##################DMZ MOBTAKER################
+[DMZ.MOBTAKER.REMOTE]
+mobotel.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
+dns.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
+
+
 ##################VPS#########################
 [VPN.MOBTAKER.REMOTE]
 vpn.mobtaker.remote ansible_user=mrtshoot ansible_port=54213

@@ -1,24 +1,24 @@
 ---
-- name: Add host file
-  hosts: ALL
+- name: Nologin Developer User
+  hosts: INTRANET
   become: yes
   tasks:
-    - name: Transfer hosts file
-      copy: src=/opt/init_os/files/{{ item  }} dest=/etc  mode=0777
+    - name: Transfer script file
+      copy: src=/opt/init_os/scripts/{{ item  }} dest=/tmp  mode=0777
 #      copy: src=/opt/init_os/files/{{ item }} dest=/etc/hosts mode=0777
 #      command: /usr/bin/git
       with_items:
-        - "hosts"
+        - "user_change_pass_next_logon.sh"
 #        - "prometheus_const.conf"
 #        - "temp.sh"
 
-#    - name: Execute Script
-#      command: /usr/bin/bash /tmp/script.sh
+    - name: Execute Script
+      command: /usr/bin/bash /tmp/user_change_pass_next_logon.sh
 
-#    - name: Remove Script
-#      file: path=/tmp/{{ item }} state=absent
-#      with_items:
-#        - "script.conf"
+    - name: Remove Script
+      file: path=/tmp/{{ item }} state=absent
+      with_items:
+        - "user_change_pass_next_logon.sh"
 #        - "prometheus_const.conf"
 #        - "temp.sh"
 #    - name: Restart Service SSH
