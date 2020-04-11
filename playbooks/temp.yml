@@ -11,6 +11,9 @@
        
       - name: Install zabbix-agent
         yum: name=zabbix-agent state=present
+     
+      - name: Copy Zabbix Agent Config File
+        copy: src=../files/zabbix_agentd.conf dest=/etc/zabbix/ mode=0777
 
       - name: Enable Zabbix Agent Service
         service: name=zabbix-agent state=restarted enabled=yes

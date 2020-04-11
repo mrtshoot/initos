@@ -221,6 +221,9 @@
     - name: Change SeLinux Mode
       command: sh '/tmp/selinux.sh'
 
+    - name: Add Zabbix Agent Config File
+      copy: src=../files/zabbix_agentd.conf dest=/etc/zabbix/ mode=0777
+
     - name: Remove Selinux File
       file: path=/tmp/selinux.sh state=absent
 
