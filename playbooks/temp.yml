@@ -1,25 +1,16 @@
 ---
-- name: Nologin Developer User
-  hosts: INTRANET
-  become: yes
-  tasks:
-    - name: Transfer script file
-      copy: src=/opt/init_os/scripts/{{ item  }} dest=/tmp  mode=0777
-#      copy: src=/opt/init_os/files/{{ item }} dest=/etc/hosts mode=0777
-#      command: /usr/bin/git
-      with_items:
-        - "user_change_pass_next_logon.sh"
-#        - "prometheus_const.conf"
-#        - "temp.sh"
+  - name: Install Zabbix Agent
+    hosts: PROM.MOBTAKER.LOCAL
+    become: yes
+    tasks:
+      - name: Download Zabbix RPM 4.0
+        yum: 
+          name:
+            - https://repo.zabbix.com/zabbix/4.0/rhel/7/x86_64/zabbix-release-4.0-1.el7.noarch.rpm
+          state: present
+       
+      - name: Install zabbix-agent
+        yum: name=zabbix-agent state=present
 
-    - name: Execute Script
-      command: /usr/bin/bash /tmp/user_change_pass_next_logon.sh
-
-    - name: Remove Script
-      file: path=/tmp/{{ item }} state=absent
-      with_items:
-        - "user_change_pass_next_logon.sh"
-#        - "prometheus_const.conf"
-#        - "temp.sh"
-#    - name: Restart Service SSH
-#      service: name=sshd state=restarted
+      - name: Enable Zabbix Agent Service
+        service: name=zabbix-agent state=restarted enabled=yes
