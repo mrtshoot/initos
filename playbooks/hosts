@@ -178,3 +178,13 @@ minimum-charge.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 minimum-club.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 cronaweb.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 cronacrawler.mobtaker.remote ansible_user=mrtshoot ansible_port=22
+
+
+[zabbix]
+etod2.mobtaker.remote ansible_user=mrtshoot ansible_port=22
+aphrodate-mine.mobtaker.remote  ansible_user=mrtshoot ansible_port=22
+cronaweb.mobtaker.remote ansible_user=mrtshoot ansible_port=22
+cronacrawler.mobtaker.remote ansible_user=mrtshoot ansible_port=22
+minimum-aaniro.mobtaker.remote ansible_user=mrtshoot ansible_port=22
+minimum-ghabz.mobtaker.remote ansible_user=mrtshoot ansible_port=22
+minimum-charge.mobtaker.remote ansible_user=mrtshoot ansible_port=22

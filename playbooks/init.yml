@@ -201,7 +201,7 @@
     - name: Add Firewall Rules
       firewalld:
         port: 10050-10051/tcp
-        permanent: yes
+        permanent: true
         state: enabled
 
     - name: Firewalld reload
@@ -240,7 +240,7 @@
       service: name=docker state=restarted enabled=yes
 
     - name: Restart Firewall Daemon
-      service: name=firewalld state=restarted enabled=yes
+      service: name=firewalld state=reloaded enabled=yes
 
     - name: Restart Zabbix Agent Daemon
       service: name=zabbix-agent state=restarted enabled=yes

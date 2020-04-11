@@ -1,6 +1,6 @@
 ---
   - name: Install Zabbix Agent
-    hosts: PROM.MOBTAKER.LOCAL
+    hosts: zabbix
     become: yes
     tasks:
       - name: Download Zabbix RPM 4.0
@@ -14,3 +14,12 @@
 
       - name: Enable Zabbix Agent Service
         service: name=zabbix-agent state=restarted enabled=yes
+
+      - name: Open Firewall Ports
+        firewalld:
+          port: 10050-10051/tcp
+          permanent: true
+          state: enabled
+
+      - name: Reload Firewall Daemon Service
+        service: name=firewalld state=reloaded
