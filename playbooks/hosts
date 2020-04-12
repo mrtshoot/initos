@@ -164,6 +164,7 @@ arion.mobtaker.local ansible_user=mrtshoot ansible_port=22
 minimum.mobtaker.local ansible_user=mrtshoot ansible_port=22
 sentry.mobtaker.local ansible_user=mrtshoot ansible_port=22
 minimum-club.mobtaker.local ansible_user=mrtshoot ansible_port=22
+prom.mobtaker.local ansible_user=mrtshoot ansible_port=22
 
 dns.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
 remotehub.etod.me ansible_user=mrtshoot ansible_port=22
@@ -181,10 +182,5 @@ cronacrawler.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 
 
 [zabbix]
-etod2.mobtaker.remote ansible_user=mrtshoot ansible_port=22
-aphrodate-mine.mobtaker.remote  ansible_user=mrtshoot ansible_port=22
-cronaweb.mobtaker.remote ansible_user=mrtshoot ansible_port=22
-cronacrawler.mobtaker.remote ansible_user=mrtshoot ansible_port=22
-minimum-aaniro.mobtaker.remote ansible_user=mrtshoot ansible_port=22
-minimum-ghabz.mobtaker.remote ansible_user=mrtshoot ansible_port=22
-minimum-charge.mobtaker.remote ansible_user=mrtshoot ansible_port=22
+minimum-club.mobtaker.local ansible_user=mrtshoot ansible_port=22
+prom.mobtaker.local ansible_user=mrtshoot ansible_port=22
