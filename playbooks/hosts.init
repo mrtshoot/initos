@@ -1,6 +1,6 @@
 ##############################################
 #################TEST#########################
 ##############################################
-[cronacrowl]
-cronacrowl.mobtaker.remote ansible_user=root ansible_port=22
+[vpn.mobtaker.remote]
+app.egom.me ansible_user=root ansible_port=22
 

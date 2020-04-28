@@ -1,0 +1,41 @@
+---
+  - name: Install Prometheus Scraper on Clinets
+    hosts: MOBTAKER.REMOTE
+    become: yes
+    tasks:
+      - name: Copy Prometheus Script
+        copy: src=../scripts/prom_monitored_device.sh dest=/tmp mode=0777
+
+      - name: Execute Prometheus Script
+        command: sh /tmp/prom_monitored_device.sh
+
+      - name: Copy Prometheus Nginx Config Files
+        copy: 
+          src: ../files/{{ item }}
+          dest: /opt/prometheus-monitored-device/proxy/config/conf.d/
+          mode: 0777
+        with_items:
+          - "prometheus_const.conf"
+          - "local.conf"
+      
+      - name: Open Firewall Ports
+        firewalld:
+          port: 8085/tcp
+          permanent: true
+          state: enabled 
+
+      - name: Restart Firewall
+        service: name=firewalld state=reloaded
+
+#      - name: Login to Mobtaker Registry Hub
+#        docker_login:
+#          registry: localhub.etod.me
+#          username: "mrtshoot"
+#          password: "!@#123!@#"
+#          reauthorize: yes      
+
+      - name: copy docker-compose script
+        copy: src=../scripts/docker-compose-prom-devices.sh dest=/tmp mode=0777
+
+      - name: Execute docker-compose command
+        command: sh /tmp/docker-compose-prom-devices.sh

@@ -1,6 +1,6 @@
 ---
 - name: Init OS Version 2.0.0 Maintainer MrTshoot
-  hosts: app.egom.me
+  hosts: cronacrowl
   become: yes
   tasks:
 
@@ -82,17 +82,17 @@
         name: setools
         state: present
 
-#    - name: Download Zabbix RPM 4.0
-#      yum:
-#        name:
-#          - https://repo.zabbix.com/zabbix/4.0/rhel/7/x86_64/zabbix-release-4.0-1.el7.noarch.rpm
-#        state: present
+    - name: Download Zabbix RPM 4.0
+      yum:
+        name:
+          - https://repo.zabbix.com/zabbix/4.0/rhel/7/x86_64/zabbix-release-4.0-1.el7.noarch.rpm
+        state: present
 
-#    - name: Install zabbix-agent
-#      yum: name=zabbix-agent state=present
+    - name: Install zabbix-agent
+      yum: name=zabbix-agent state=present
 
-#    - name: Enable Zabbix Agent Service
-#      service: name=zabbix-agent state=restarted enabled=yes
+    - name: Enable Zabbix Agent Service
+      service: name=zabbix-agent state=restarted enabled=yes
 
     - name: Transfer NTP File
       copy: src=../files/{{ item }} dest=/etc/  mode=0777
@@ -148,17 +148,17 @@
         ssh_key_file: .ssh/id_rsa
         append: yes
 
-#    - name: Add User Developer
-#      user:
-#        name: developer
-#        state: present
-#        create_home: yes
-#        shell: /bin/bash
-#        update_password: on_create
-#        generate_ssh_key: yes
-#        ssh_key_bits: 2048
-#        ssh_key_file: .ssh/id_rsa
-#        append: yes
+    - name: Add User Developer
+      user:
+        name: developer
+        state: present
+        create_home: yes
+        shell: /bin/bash
+        update_password: on_create
+        generate_ssh_key: yes
+        ssh_key_bits: 2048
+        ssh_key_file: .ssh/id_rsa
+        append: yes
 
     - name: Make Sudoers
       copy: src=../scripts/{{ item }} dest=/tmp/ mode=0777
@@ -176,10 +176,10 @@
       with_file:
         - ../files/.ssh_keys_mrtshoot
 
-#    - name: Set Up Authorized Keys for Developer User
-#      authorized_key: user=developer key="{{item}}"
-#      with_file:
-#        - ../files/.ssh_keys_developer
+    - name: Set Up Authorized Keys for Developer User
+      authorized_key: user=developer key="{{item}}"
+      with_file:
+        - ../files/.ssh_keys_developer
 
     - name: Transfer SSH Configuration File
       copy: src=../files/{{ item }} dest=/etc/ssh/  mode=0777
@@ -221,8 +221,8 @@
     - name: Change SeLinux Mode
       command: sh '/tmp/selinux.sh'
 
-#    - name: Add Zabbix Agent Config File
-#      copy: src=../files/zabbix_agentd.conf dest=/etc/zabbix/ mode=0777
+    - name: Add Zabbix Agent Config File
+      copy: src=../files/zabbix_agentd.conf dest=/etc/zabbix/ mode=0777
 
     - name: Remove Selinux File
       file: path=/tmp/selinux.sh state=absent
@@ -245,5 +245,5 @@
     - name: Restart Firewall Daemon
       service: name=firewalld state=reloaded enabled=yes
 
-#    - name: Restart Zabbix Agent Daemon
-#      service: name=zabbix-agent state=restarted enabled=yes
+    - name: Restart Zabbix Agent Daemon
+      service: name=zabbix-agent state=restarted enabled=yes

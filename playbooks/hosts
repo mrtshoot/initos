@@ -61,6 +61,7 @@ minimum-club.mobtaker.local ansible_user=mrtshoot ansible_port=22
 sentry.mobtaker.local ansible_user=mrtshoot ansible_port=22
 prom.mobtaker.local ansible_user=mrtshoot ansible_port=22
 zabbix.mobtaker.local ansible_user=mrtshoot ansible_port=22
+vpn.mobtaker.remote  ansible_user=mrtshoot  ansible_port=22
 
 ############MOBTAKER.REMOTE###################
 [DNS.MOBTAKER.REMOTE]
@@ -114,6 +115,9 @@ cronaweb.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 [CRONACRAWLER.MOBTAKER.REMOTE]
 cronacrawler.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 
+[VPN.MOBTAKER.REMOTE]
+vpn.mobtaker.remote ansible_user=mrtshoot ansible_port=22
+
 [MOBTAKER.REMOTE]
 cronaweb.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 cronacrawler.mobtaker.remote ansible_user=mrtshoot ansible_port=22
@@ -131,6 +135,7 @@ minimum-charge.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 minimum-club.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 etod2.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 aphrodate-mine.mobtaker.remote  ansible_user=mrtshoot ansible_port=22
+vpn.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 
 ##################DMZ MOBTAKER################
 [DMZ.MOBTAKER.REMOTE]
@@ -139,14 +144,14 @@ dns.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
 
 
 ##################VPS#########################
-[VPN.MOBTAKER.REMOTE]
-vpn.mobtaker.remote ansible_user=mrtshoot ansible_port=54213
+[OPENVPN.MOBTAKER.REMOTE]
+openvpn.mobtaker.remote ansible_user=mrtshoot ansible_port=54213
 
 [TELEGRAM.MOBTAKER.REMOTE]
 telegram.mobtaker.remote  ansible_user=mrtshoot ansible_port=59286
 
 [VPS.MOBTAKER.REMOTE]
-vpn.mobtaker.remote ansible_user=mrtshoot ansible_port=54213
+openvpn.mobtaker.remote ansible_user=mrtshoot ansible_port=54213
 telegram.mobtaker.remote  ansible_user=mrtshoot ansible_port=59286
 
 [APHRODATE.MOBTAKER.REMOTE]
@@ -165,7 +170,6 @@ minimum.mobtaker.local ansible_user=mrtshoot ansible_port=22
 sentry.mobtaker.local ansible_user=mrtshoot ansible_port=22
 minimum-club.mobtaker.local ansible_user=mrtshoot ansible_port=22
 prom.mobtaker.local ansible_user=mrtshoot ansible_port=22
-
 dns.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
 remotehub.etod.me ansible_user=mrtshoot ansible_port=22
 ido.mobtaker.remote ansible_user=mrtshoot ansible_port=22

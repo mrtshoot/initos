@@ -4,6 +4,7 @@
 192.168.0.9             mobtakercard.mobtaker.local
 192.168.0.12            localhub.etod.me
 192.168.0.13            zabbix.mobtaker.local
+192.168.0.16		vpn.mobtaker.local
 192.168.0.17            ido-pwa.mobtaker.local
 192.168.0.18            ido.mobtaker.local
 192.168.0.19            sentry.mobtaker.local
@@ -32,9 +33,11 @@
 11.1.1.25       aphrodate-mine.mobtaker.remote
 11.1.1.26       minimum-club.mobtaker.remote
 11.1.1.34	cronaweb.mobtaker.remote
-11.1.1.35       cronacrawl.mobtaker.remote
+11.1.1.35       cronacrawler.mobtaker.remote
+11.1.1.27	vpn.mobtaker.remote
 37.156.144.178  mobotel.mobtaker.remote
 185.49.86.190   dns.mobtaker.remote
 176.9.235.213   aphrodate.mobtaker.remote
-185.208.172.249 vpn.mobtaker.remote
+185.208.172.249 openvpn.mobtaker.remote
 195.248.243.50  telegram.mobtaker.remote
+185.97.118.151	app.egom.me

@@ -1,6 +1,6 @@
 ---
   - name: Add Route on OS
-    hosts: MOBTAKER.REMOTE
+    hosts: PROM.MOBTAKER.LOCAL
     become: yes
     tasks: 
     - name: Upload Script to Servers
