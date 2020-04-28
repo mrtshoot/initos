@@ -10,19 +10,19 @@ mrtshoot@gmail.com
 
 
 ### Step0
-login with root on client machine\r
+login with root on client machine
 
 ### Step1
-create and copy ansible user ssh key on authorized root account\r
+create and copy ansible user ssh key on authorized root account
 
 ### Step2
-change publickey atheuntication to yes and password authentication to no and reload sshd\r
+change publickey atheuntication to yes and password authentication to no and reload sshd
 
 ### Step3
-add your host to ansible hosts directive\r
+add your host to ansible hosts directive
 
 ### Step4
-add your directive to playbooks/init.yml host section\r
+add your directive to playbooks/init.yml host section
 
 ### Step5
 run "bash init.sh"
