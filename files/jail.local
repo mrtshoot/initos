@@ -1,0 +1,13 @@
+[sshd]
+ignoreip = 127.0.0.1/8
+ignoreip = 81.12.36.200/29
+ignoreip = 185.49.86.184/29
+ignoreip = 37.156.145.0/29
+enabled = true
+port = 22
+bantime = 86400
+findtime  =  86400
+maxretry = 1
+filter = sshd
+logpath = %(sshd_log)s
+backend = %(sshd_backend)s

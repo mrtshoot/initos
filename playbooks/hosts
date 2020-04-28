@@ -188,3 +188,7 @@ cronacrawler.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 [zabbix]
 minimum-club.mobtaker.local ansible_user=mrtshoot ansible_port=22
 prom.mobtaker.local ansible_user=mrtshoot ansible_port=22
+
+##########################EGOM#########################
+[egom]
+app.egom.me ansible_user=mrtshoot ansible_port=22

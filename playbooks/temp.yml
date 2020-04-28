@@ -1,7 +1,20 @@
 ---
-  - name: Send File
-    hosts: MOBTAKER.LOCAL
-    become: yes
-    tasks:
-      - name: Copy Zabbix Agent Config File
-        copy: src=../temp/docker-compose.yml dest=/opt/prometheus-monitored-device/ mode=0777
+- name: Install fail2ban
+  hosts: egom
+  become: yes
+  tasks:
+ 
+  - name: Install Fail2ban Application
+    yum:
+      name: fail2ban
+      state: present
+     
+  - name: Send Configuration files
+    copy: src=../files/{{ item  }} dest=/etc/fail2ban
+    with_items:
+      - "jail.local"
+      - "jail.conf"
+      - "fail2ban.conf"
+
+  - name: Enable and Start Fail2ban Service
+    service: name=fail2ban state=restarted enabled=yes 
