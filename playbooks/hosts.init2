@@ -1,6 +1,6 @@
 ##############################################
 #################TEST#########################
 ##############################################
-[jaheshfund.mobtaker.local]
-jaheshfund.mobtaker.local ansible_user=root ansible_port=22
+[jaheshfund.mobtaker.remote]
+jaheshfund.mobtaker.remote ansible_user=root ansible_port=22
 

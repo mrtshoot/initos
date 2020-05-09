@@ -1,6 +1,6 @@
 ---
 - name: Init OS Version 2.0.0 Maintainer MrTshoot
-  hosts: jaheshfund.mobtaker.local
+  hosts: jaheshfund.mobtaker.remote
   become: yes
   tasks:
 
