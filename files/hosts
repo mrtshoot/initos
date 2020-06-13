@@ -12,17 +12,18 @@
 192.168.0.25            arion.mobtaker.local
 192.168.0.28		mail.mobtaker.local mail.mobtakerteam.com
 192.168.0.29            minimum.mobtaker.local
-192.168.0.30            etod2.mobtaker.local    aphrodate.mobtaker.local
+192.168.0.30            aphrodate.mobtaker.local
 192.168.0.31            prom.mobtaker.local
 192.168.0.32            minimum-club.mobtaker.local
 192.168.0.34		jaheshfund.mobtaker.local
+192.168.0.35		etod.mobtaker.local
+192.168.0.36		nahayatnegar.mobtaker.local
 192.168.0.37		egom-web.mobtaker.local
-192.168.0.140           etod.mobtaker.local
+192.168.0.38		nexus.mobtakerteam.com repo.mobtakerteam.com
 192.168.0.141           git.mobtaker.local
 192.168.0.142           jenkins.mobtaker.local
 192.168.0.254           net.mobtaker.local
 #############MOBTAKER.REMOTE#####################
-11.1.1.1        etod.mobtaker.remote
 11.1.1.2        net.mobtaker.remote
 11.1.1.3        arion.mobtaker.remote heron.mobtaker.remote
 11.1.1.4        etod2.mobtaker.remote
@@ -41,10 +42,24 @@
 11.1.1.27	vpn.mobtaker.remote
 11.1.1.28	topchange.mobtaker.remote appardakht.mobtakerteam.com
 11.1.1.29	jaheshfund.mobtaker.remote jaheshfund.com
+11.1.1.30	etod.mobtaker.remote
 11.1.1.36	egom-web.mobtaker.remote
 37.156.144.178  mobotel.mobtaker.remote
 185.49.86.190   dns.mobtaker.remote
 176.9.235.213   aphrodate.mobtaker.remote
 209.51.211.241  proxy.mobtaker.remote
 195.248.243.50  openvpn.mobtaker.remote
-185.97.118.151	app.egom.me
+185.97.118.151	app.egom.me video.egom.me rt.egom.me
+185.97.116.205  otp.egom.me
+185.143.233.5	idogroup.ir
+185.143.234.5	web.idogroup.ir
+37.156.144.179	mobtakercard.com web.mobtakercard.com
+185.94.99.234	mobtakerteam.com
+185.49.86.189	appardakht.mobtakerteam.com
+185.94.99.234	mobotel.me
+37.156.144.178	matrix.mobotel.me riot.mobotel.me
+185.143.234.5	egom.me
+37.156.144.187  web.egom.me
+37.156.144.187	minimum.money
+37.156.144.179	club.minimum.money
+45.82.137.177	nahayatnegar.mobtaker.remote

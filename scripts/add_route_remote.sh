@@ -1,0 +1,3 @@
+#!/bin/bash
+ip route add 192.168.0.0/24 via 11.1.1.2
+ip route add 172.25.30.0/24 via 11.1.1.2

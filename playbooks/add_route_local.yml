@@ -1,0 +1,16 @@
+---
+- name: Add Route to Routing table
+  hosts: NAHAYATNEGAR.MOBTAKER.LOCAL
+  become: yes
+  tasks:
+     
+  - name: Send Configuration files
+    copy: src=../scripts/{{ item  }} dest=/tmp
+    with_items:
+      - "add_route_local.sh"
+
+  - name: Execute Script add route
+    command: sh '/tmp/add_route_local.sh'
+
+  - name: Delete Script
+    file: path=/tmp/add_route_local.sh state=absent

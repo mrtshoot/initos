@@ -1,6 +1,6 @@
 ---
   - name: Change Resolvers
-    hosts: MOBTAKER.LOCAL
+    hosts: INTRANET
     become: yes
     tasks:
       - name: Transfer File

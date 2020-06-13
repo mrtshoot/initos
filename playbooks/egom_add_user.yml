@@ -1,0 +1,19 @@
+---
+- name: Add Egom Users
+  hosts: app.egom.me
+  become: yes
+  tasks:
+     
+  - name: Send Userlist
+    copy: src=../files/{{ item  }} dest=/usr/local/bin mode=0777
+    with_items:
+      - "userlist-egom"
+
+  - name: Execute Script
+    command: sh '/usr/local/bin/matrix-synapse-register-user2'
+    register: users
+
+  - debug: var=users.stdout_lines
+
+  - name: Remove Userlist
+    file: path=/usr/local/bin/userlist-egom state=absent

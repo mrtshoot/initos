@@ -1,0 +1,10 @@
+#!/bin/bash -x
+
+#Global Variables
+DB_USER='laraveluser';
+DB_PASSWD='B9bqD1kB0ix1fK9PuqzY';
+DB_NAME='laravel';
+TABLE='table_users';
+
+#Execute Mysql Commands
+/usr/bin/docker exec db mysql -ularaveluser -pB9bqD1kB0ix1fK9PuqzY -e "use laravel;" -e "INSERT INTO $TABLE (id, phone_number, home_server_id, username, password, created_at, updated_at, category_id, display_name) VALUES (NULL, '"$3"', "$4", '"$1"', '"$2"', NULL, NULL, '"$5"', '');"

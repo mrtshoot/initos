@@ -1,0 +1,16 @@
+---
+- name: Add Route to Routing table
+  hosts: jaheshfund.mobtaker.remote
+  become: yes
+  tasks:
+     
+  - name: Send Configuration files
+    copy: src=../scripts/{{ item  }} dest=/tmp
+    with_items:
+      - "add_route_remote.sh"
+
+  - name: Execute Script add route
+    command: sh '/tmp/add_route_remote.sh'
+
+  - name: Delete Script
+    file: path=/tmp/add_route_remote.sh state=absent

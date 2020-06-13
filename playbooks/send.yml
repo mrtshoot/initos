@@ -1,6 +1,6 @@
 ---
 - name: Send File
-  hosts: egom-web.mobtaker.remote
+  hosts: nahayatnegar.mobtaker.remote
   become: yes
   tasks:
      

@@ -1,6 +1,6 @@
 ---
 - name: Init OS Version 2.0.0 Maintainer MrTshoot
-  hosts: jaheshfund.mobtaker.local
+  hosts: nahayatnegar.mobtaker.remote
   become: yes
   tasks:
 
@@ -22,10 +22,10 @@
         name: "@Development tools"
         state: present
 
-    - name: Install IUS CentOS7 Community
-      yum:
-        name: "https://centos7.iuscommunity.org/ius-release.rpm"
-        state: present
+#    - name: Install IUS CentOS7 Community
+#      yum:
+#        name: "https://centos7.iuscommunity.org/ius-release.rpm"
+#        state: present
 
 #    - name: Install Python3-6
 #      yum:

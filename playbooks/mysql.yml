@@ -1,0 +1,16 @@
+---
+- name: Add User on Egom OTP Database
+  hosts: otp.egom.me
+  become: yes
+  tasks:
+     
+#  - name: Send Script
+#    copy: src=../scripts/{{ item  }} dest=/tmp mode=0777 force=no
+#    with_items:
+#      - "mysql_add_user.sh"
+
+  - name: Execute Script
+    command: "bash /usr/local/bin/mysql_add_user {{ username|quote }} {{ password|quote  }} {{ phone|quote  }} {{ homeserver|quote }} {{ category_id|quote }} {{ display_name|quote }}"
+
+#  - name: Remove Script
+#    file: path=/tmp/mysql_add_user.sh state=absent 
