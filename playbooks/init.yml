@@ -1,6 +1,6 @@
 ---
 - name: Init OS Version 2.0.0 Maintainer MrTshoot
-  hosts: nahayatnegar.mobtaker.remote
+  hosts: proxy.mobtaker.remote
   become: yes
   tasks:
 
@@ -223,6 +223,12 @@
 
     - name: Add Zabbix Agent Config File
       copy: src=../files/zabbix_agentd.conf dest=/etc/zabbix/ mode=0777
+
+    - name: Add Allow Hosts to SSH
+      copy: src=../files/{{ item }} dest=/etc mode=0777
+      with_items:
+        - "hosts.allow"
+        - "hosts.deny"
 
     - name: Remove Selinux File
       file: path=/tmp/selinux.sh state=absent

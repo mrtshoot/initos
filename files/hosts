@@ -5,6 +5,7 @@
 192.168.0.12            localhub.etod.me
 192.168.0.13            zabbix.mobtaker.local
 192.168.0.33		topchange.mobtaker.local
+192.168.0.15		ansible.mobtaker.local
 192.168.0.16		vpn.mobtaker.local
 192.168.0.17            ido-pwa.mobtaker.local
 192.168.0.18            ido.mobtaker.local
@@ -47,8 +48,8 @@
 37.156.144.178  mobotel.mobtaker.remote
 185.49.86.190   dns.mobtaker.remote
 176.9.235.213   aphrodate.mobtaker.remote
-209.51.211.241  proxy.mobtaker.remote
-195.248.243.50  openvpn.mobtaker.remote
+195.248.243.50  proxy.mobtaker.remote
+209.51.211.241  openvpn.mobtaker.remote
 185.97.118.151	app.egom.me video.egom.me rt.egom.me
 185.97.116.205  otp.egom.me
 185.143.233.5	idogroup.ir

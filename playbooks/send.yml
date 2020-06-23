@@ -1,13 +1,13 @@
 ---
-- name: Send File
-  hosts: nahayatnegar.mobtaker.remote
+- name: Send Allow SSH
+  hosts: ALL
   become: yes
   tasks:
-     
-  - name: Send Configuration files
-    copy: src=../files/{{ item  }} dest=/etc/
-    with_items:
-      - "rsyslog.conf"
+    - name: Add Allow Hosts to SSH
+      copy: src=../files/{{ item }} dest=/etc mode=0777
+      with_items:
+        - "hosts.allow"
+        - "hosts.deny"
 
-  - name: Enable and Start service
-    service: name=rsyslog state=restarted enabled=yes 
+#    - name: Restart SSHD Services
+#      service: name=sshd state=restarted enabled=yes

@@ -1,0 +1,13 @@
+---
+- name: Send File
+  hosts: proxy.mobtaker.remote
+  become: yes
+  tasks:
+     
+  - name: Send Configuration files
+    copy: src=../files/{{ item  }} dest=/etc/
+    with_items:
+      - "rsyslog.conf"
+
+  - name: Enable and Start service
+    service: name=rsyslog state=restarted enabled=yes 
