@@ -98,7 +98,7 @@
         state: present
 
     - name: Remove Nexus Repo
-      file: path=/etc/yum.repos.d/ state=absent
+      file: path=/etc/yum.repos.d/nexus.repo state=absent
 
     - name: Download Zabbix RPM 4.0
       yum:
