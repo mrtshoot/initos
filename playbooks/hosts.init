@@ -1,6 +1,11 @@
 ##############################################
 #################TEST#########################
 ##############################################
-[proxy.mobtaker.remote]
-proxy.mobtaker.remote ansible_user=root ansible_port=22
+#[cloud]
+#oscontroller ansible_user=root ansible_port=22
+#oscompute01 ansible_user=root ansible_port=22
+#oscompute02 ansible_user=root ansible_port=22
+#snetwork ansible_user=root ansible_port=22
+[hamrahportal]
+hamrahportal.mobtaker.local ansible_user=root ansible_port=22
 

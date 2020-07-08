@@ -1,6 +1,6 @@
 ---
 - name: Init OS Version 2.0.0 Maintainer MrTshoot
-  hosts: proxy.mobtaker.remote
+  hosts: hamrahportal
   become: yes
   tasks:
 
@@ -22,10 +22,16 @@
         name: "@Development tools"
         state: present
 
-#    - name: Install IUS CentOS7 Community
-#      yum:
-#        name: "https://centos7.iuscommunity.org/ius-release.rpm"
-#        state: present
+    - name: Install IUS CentOS7 Community
+      yum:
+       # name: "https://centos7.iuscommunity.org/ius-release.rpm"
+        name: https://repo.ius.io/ius-release-el7.rpm
+        state: present
+   
+    - name: Install IUS CentOS7 Community
+      yum:
+        name: https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+        state: present
 
 #    - name: Install Python3-6
 #      yum:

@@ -1,0 +1,10 @@
+---
+- name: Remove Supervisor
+  hosts: ALL
+  become: yes
+  tasks:
+ 
+  - name: Remove Supervisor for lumen and laravel
+    yum:
+      name: supervisor
+      state: absent

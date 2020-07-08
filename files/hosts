@@ -1,7 +1,13 @@
 127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
 ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+#TEST
+11.1.1.40	oscontroller.mobtaker.remote	oscontroller
+11.1.1.41	oscompute01.mobtaker.remote	oscompute01
+11.1.1.42	oscompute02.mobtaker.remote	oscompute02
+11.1.1.43	osnetwork.mobtaker.remote	osnetwork
 ############MOBTAKER.LOCAL#######################
-192.168.0.9             mobtakercard.mobtaker.local
+192.168.0.6		hamrahportal.mobtaker.local
+#192.168.0.9             mobtakercard.mobtaker.local
 192.168.0.12            localhub.etod.me
 192.168.0.13            zabbix.mobtaker.local
 192.168.0.33		topchange.mobtaker.local
@@ -39,7 +45,7 @@
 11.1.1.25       aphrodate-mine.mobtaker.remote
 11.1.1.26       minimum-club.mobtaker.remote
 11.1.1.34	cronaweb.mobtaker.remote
-11.1.1.35       cronacrawler.mobtaker.remote
+#11.1.1.35       cronacrawler.mobtaker.remote
 11.1.1.27	vpn.mobtaker.remote
 11.1.1.28	topchange.mobtaker.remote appardakht.mobtakerteam.com
 11.1.1.29	jaheshfund.mobtaker.remote jaheshfund.com
