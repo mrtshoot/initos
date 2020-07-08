@@ -12,6 +12,12 @@
     - name: Add Nexus Repo
       copy: src=../files/nexus.repo dest=/etc/yum.repos.d/ mode=0777
 
+    - name: Transfer Resolver and Hosts
+      copy: src=../files/{{ item }} dest=/etc/  mode=0777
+      with_items:
+        - "resolv.conf"
+        - "hosts"
+
     - name: Upgrade All Packages
       yum: name=* state=latest
 
@@ -142,12 +148,6 @@
     - name: Remove Docker Compose Installation File
       file: path=/tmp/install_docker_compose.sh state=absent
 
-    - name: Transfer Resolver and Hosts
-      copy: src=../files/{{ item }} dest=/etc/  mode=0777
-      with_items:
-        - "resolv.conf"
-        - "hosts"
-     
     - name: Add User MrTshoot
       user:
         name: mrtshoot
