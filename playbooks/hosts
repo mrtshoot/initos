@@ -142,6 +142,9 @@ jaheshfund.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 [NAHAYATNEGAR.MOBTAKER.REMOTE]
 nahayatnegar.mobtaker.remote ansible_user=mrtshoot ansible_port=47356
 
+[HAMRAHPORTAL.MOBTAKER.REMOTE]
+hamrahportal.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
+
 [MOBTAKER.REMOTE]
 cronaweb.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 #cronacrawler.mobtaker.remote ansible_user=mrtshoot ansible_port=22
@@ -163,6 +166,7 @@ topchange.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 egom-web.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 jaheshfund.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 nahayatnegar.mobtaker.remote ansible_user=mrtshoot ansible_port=47356
+hamrahportal.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
 
 ##################MobtakrTeam#################
 [NEXUS.MOBTAKERTEAM.COM]
@@ -226,6 +230,7 @@ etod.mobtaker.local ansible_user=mrtshoot ansible_port=22
 nahayatnegar.mobtaker.local ansible_user=mrtshoot ansible_port=22
 nexus.mobtakerteam.com ansible_user=mrtshoot ansible_port=22
 hamrahportal.mobtaker.local ansible_user=mrtshoot ansible_port=22
+#hamrahportal.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
 
 [zabbix]
 minimum-club.mobtaker.local ansible_user=mrtshoot ansible_port=22
@@ -286,6 +291,7 @@ egom-web.mobtaker.local ansible_user=mrtshoot ansible_port=22
 jaheshfund.mobtaker.local ansible_user=mrtshoot ansible_port=22
 nahayatnegar.mobtaker.local ansible_user=mrtshoot ansible_port=22
 hamrahportal.mobtaker.local ansible_user=mrtshoot ansible_port=22
+hamrahportal.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
 
 ######################OpenStack##########################
 [CLOUD]

@@ -1,6 +1,6 @@
 ---
 - name: Add Route to Routing table
-  hosts: NAHAYATNEGAR.MOBTAKER.LOCAL
+  hosts: HAMRAHPORTAL.MOBTAKER.LOCAL
   become: yes
   tasks:
      

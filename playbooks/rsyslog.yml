@@ -1,6 +1,6 @@
 ---
 - name: Send File
-  hosts: proxy.mobtaker.remote
+  hosts: hamrahportal.mobtaker.remote
   become: yes
   tasks:
      

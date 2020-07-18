@@ -9,8 +9,8 @@
         name: epel-release
         state: present
 
-    - name: Add Nexus Repo
-      copy: src=../files/nexus.repo dest=/etc/yum.repos.d/ mode=0777
+#    - name: Add Nexus Repo
+#      copy: src=../files/nexus.repo dest=/etc/yum.repos.d/ mode=0777
 
     - name: Transfer Resolver and Hosts
       copy: src=../files/{{ item }} dest=/etc/  mode=0777
