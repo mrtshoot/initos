@@ -1,6 +1,6 @@
 ---
 - name: Init OS Version 2.0.0 Maintainer MrTshoot
-  hosts: hamrahportal
+  hosts: monitoring
   become: yes
   tasks:
 
@@ -97,8 +97,8 @@
         name: setools
         state: present
 
-    - name: Remove Nexus Repo
-      file: path=/etc/yum.repos.d/nexus.repo state=absent
+#    - name: Remove Nexus Repo
+#      file: path=/etc/yum.repos.d/nexus.repo state=absent
 
     - name: Download Zabbix RPM 4.0
       yum:
@@ -117,16 +117,16 @@
       with_items:
         - "ntp.conf"
 
-    - name: Transfer DNS Proxy File
-      copy: src=../scripts/{{ item }} dest=/tmp/  mode=0777
-      with_items:
-        - "dns.sh"
+#    - name: Transfer DNS Proxy File
+#      copy: src=../scripts/{{ item }} dest=/tmp/  mode=0777
+#      with_items:
+#        - "dns.sh"
 
-    - name: Start DNS Proxy
-      command: sh '/tmp/dns.sh'
+#    - name: Start DNS Proxy
+#      command: sh '/tmp/dns.sh'
     
-    - name: Remove DNS Proxy File
-      file: path=/tmp/dns.sh state=absent
+#    - name: Remove DNS Proxy File
+#      file: path=/tmp/dns.sh state=absent
 
     - name: Transfer Docker Install Scripts
       copy: src=../scripts/{{ item }} dest=/tmp/  mode=0777
@@ -160,17 +160,17 @@
         ssh_key_file: .ssh/id_rsa
         append: yes
 
-#    - name: Add User Developer
-#      user:
-#        name: rajaei-n
-#        state: present
-#        create_home: yes
-#        shell: /bin/bash
-#        update_password: on_create
-#        generate_ssh_key: yes
-#        ssh_key_bits: 2048
-#        ssh_key_file: .ssh/id_rsa
-#        append: yes
+    - name: Add User Basirat
+      user:
+        name: basirat-a
+        state: present
+        create_home: yes
+        shell: /bin/bash
+        update_password: on_create
+        generate_ssh_key: yes
+        ssh_key_bits: 2048
+        ssh_key_file: .ssh/id_rsa
+        append: yes
 
     - name: Make Sudoers
       copy: src=../scripts/{{ item }} dest=/tmp/ mode=0777
@@ -188,10 +188,10 @@
       with_file:
         - ../files/.ssh_keys_mrtshoot
 
-#    - name: Set Up Authorized Keys for Developer User
-#      authorized_key: user=developer key="{{item}}"
-#      with_file:
-#        - ../files/.ssh_keys_developer
+    - name: Set Up Authorized Keys for Basirat User
+      authorized_key: user=basirat-a key="{{item}}"
+      with_file:
+        - ../files/.ssh_keys_basirat
 
     - name: Transfer SSH Configuration File
       copy: src=../files/{{ item }} dest=/etc/ssh/  mode=0777
@@ -204,13 +204,31 @@
     - name: Syslog Configuration
       copy: src=../files/rsyslog.conf dest=/etc/ mode=0777
 
-    - name: Add Firewall Rules
+    - name: Open port http
       firewalld:
         port: 80/tcp
         permanent: yes
         state: enabled
 
-    - name: Add Firewall Rules
+    - name: Open port https
+      firewalld:
+        port: 443/tcp
+        permanent: yes
+        state: enabled
+  
+    - name: Open port 8081
+      firewalld:
+        port: 8081/tcp
+        permanent: yes
+        state: enabled
+
+    - name: Open port 4443
+      firewalld:
+        port: 4443/tcp
+        permanent: yes
+        state: enabled
+
+    - name: Open Port Zabbix
       firewalld:
         port: 10050-10051/tcp
         permanent: true

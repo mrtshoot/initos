@@ -8,23 +8,14 @@ etod.mobtaker.local ansible_user=mrtshoot ansible_port=22
 [APHRODATE.MOBTAKER.LOCAL]
 aphrodate.mobtaker.local ansible_user=mrtshoot ansible_port=22
 
-[IDO.MOBTAKER.LOCAL]
-ido.mobtaker.local ansible_user=mrtshoot ansible_port=22
-
-[IDO-PWA.MOBTAKER.LOCAL]
-ido-pwa.mobtaker.local ansible_user=mrtshoot ansible_port=22
-
-#[MOBTAKERCARD.MOBTAKER.LOCAL]
-#mobtakercard.mobtaker.local ansible_user=mrtshoot ansible_port=22
-
 [LOCALHUB.ETOD.ME]
 localhub.etod.me ansible_user=mrtshoot ansible_port=22
 
 [ZABBIX.MOBTAKER.LOCAL]
 zabbix.mobtaker.local ansible_user=mrtshoot ansible_port=22
 
-#[ARION.MOBTAKER.LOCAL]
-#arion.mobtaker.local ansible_user=mrtshoot ansible_port=22
+[HAMRAHAPI.MOBTAKER.LOCAL]
+hamrahapi.mobtaker.local ansible_user=mrtshoot ansible_port=22
 
 [JENKINS.MOBTAKER.LOCAL]
 jenkins.mobtaker.local ansible_user=mrtshoot ansible_port=22
@@ -56,20 +47,20 @@ nahayatnegar.mobtaker.local ansible_user=mrtshoot ansible_port=22
 [HAMRAHPORTAL.MOBTAKER.LOCAL]
 hamrahportal.mobtaker.local ansible_user=mrtshoot ansible_port=22
 
+[SEJAM.MOBTAKER.LOCAL]
+sejam.mobtaker.local ansible_user=mrtshoot ansible_port=22
+
+[EGOM-OTP.MOBTAKER.LOCAL]
+egom-otp.mobtaker.local ansible_user=mrtshoot ansible_port=22
 
 [MOBTAKER.LOCAL]
 git.mobtaker.local ansible_user=mrtshoot ansible_port=22
 etod.mobtaker.local ansible_user=mrtshoot ansible_port=22
 aphrodate.mobtaker.local ansible_user=mrtshoot ansible_port=22
-ido.mobtaker.local ansible_user=mrtshoot ansible_port=22
-ido-pwa.mobtaker.local ansible_user=mrtshoot ansible_port=22
-#mobtakercard.mobtaker.local ansible_user=mrtshoot ansible_port=22
 localhub.etod.me ansible_user=mrtshoot ansible_port=22
-#arion.mobtaker.local ansible_user=mrtshoot ansible_port=22
-#jenkins.mobtaker.local ansible_user=mrtshoot ansible_port=22
+hamrahapi.mobtaker.local ansible_user=mrtshoot ansible_port=22
 minimum.mobtaker.local ansible_user=mrtshoot ansible_port=22
 minimum-club.mobtaker.local ansible_user=mrtshoot ansible_port=22
-#sentry.mobtaker.local ansible_user=mrtshoot ansible_port=22
 prom.mobtaker.local ansible_user=mrtshoot ansible_port=22
 zabbix.mobtaker.local ansible_user=mrtshoot ansible_port=22
 topchange.mobtaker.local ansible_user=mrtshoot ansible_port=22
@@ -77,6 +68,8 @@ egom-web.mobtaker.local ansible_user=mrtshoot ansible_port=22
 jaheshfund.mobtaker.local ansible_user=mrtshoot ansible_port=22
 nahayatnegar.mobtaker.local ansible_user=mrtshoot ansible_port=22
 hamrahportal.mobtaker.local ansible_user=mrtshoot ansible_port=22
+sejam.mobtaker.local ansible_user=mrtshoot ansible_port=22
+egom-otp.mobtaker.local ansible_user=mrtshoot ansible_port=22
 
 ############MOBTAKER.REMOTE###################
 [DNS.MOBTAKER.REMOTE]
@@ -91,14 +84,8 @@ etod.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 [ETOD2.MOBTAKER.REMOTE]
 etod2.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 
-[APHRODATE-MINE.MOBTAKER.REMOTE]
-aphrodate-mine.mobtaker.remote  ansible_user=mrtshoot ansible_port=22
-
-[IDO.MOBTAKER.REMOTE]
-ido.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
-
-[IDO-PWA.MOBTAKER.REMOTE]
-ido-pwa.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
+[HAMRAHAPI.MOBTAKER.REMOTE]
+hamrahapi.mobtaker.remote  ansible_user=mrtshoot ansible_port=22
 
 [MOBOTEL.MOBTAKER.REMOTE]
 mobotel.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
@@ -118,18 +105,6 @@ minimum-ghabz.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 [MINIMUM-CLUB.MOBTAKE.REMOTE]
 minimum-club.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 
-#[ARION.MOBTAKER.REMOTE]
-#arion.mobtaker.remote ansible_user=mrtshoot ansible_port=22
-
-[MOBTAKERCARD.MOBTAKER.REMOTE]
-mobtakercard.mobtaker.remote ansible_user=mrtshoot ansible_port=22
-
-[CRONAWEB.MOBTAKER.REMOTE]
-cronaweb.mobtaker.remote ansible_user=mrtshoot ansible_port=22
-
-#[CRONACRAWLER.MOBTAKER.REMOTE]
-#cronacrawler.mobtaker.remote ansible_user=mrtshoot ansible_port=22
-
 [TOPCHANGE.MOBTAKER.REMOTE]
 topchange.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 
@@ -146,22 +121,14 @@ nahayatnegar.mobtaker.remote ansible_user=mrtshoot ansible_port=47356
 hamrahportal.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
 
 [MOBTAKER.REMOTE]
-cronaweb.mobtaker.remote ansible_user=mrtshoot ansible_port=22
-#cronacrawler.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 remotehub.etod.me ansible_user=mrtshoot ansible_port=22
-#etod.mobtaker.remote ansible_user=mrtshoot ansible_port=22
-ido.mobtaker.remote ansible_user=mrtshoot ansible_port=22
-ido-pwa.mobtaker.remote ansible_user=mrtshoot ansible_port=22
-mobtakercard.mobtaker.remote ansible_user=mrtshoot ansible_port=22
-#wallto.mobtaker.remote ansible_user=mrtshoot ansible_port=22
-#arion.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 minimum.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 minimum-aaniro.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 minimum-ghabz.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 minimum-charge.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 minimum-club.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 etod2.mobtaker.remote ansible_user=mrtshoot ansible_port=22
-aphrodate-mine.mobtaker.remote  ansible_user=mrtshoot ansible_port=22
+hamrahapi.mobtaker.remote  ansible_user=mrtshoot ansible_port=22
 topchange.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 egom-web.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 jaheshfund.mobtaker.remote ansible_user=mrtshoot ansible_port=22
@@ -169,8 +136,6 @@ nahayatnegar.mobtaker.remote ansible_user=mrtshoot ansible_port=47356
 hamrahportal.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
 
 ##################MobtakrTeam#################
-[NEXUS.MOBTAKERTEAM.COM]
-nexus.mobtakerteam.com ansible_user=mrtshoot ansible_port=22
 
 
 ##################DMZ MOBTAKER################
@@ -193,32 +158,31 @@ openvpn.mobtaker.remote  ansible_user=mrtshoot ansible_port=54213
 [APHRODATE.MOBTAKER.REMOTE]
 aphrodate.mobtaker.remote ansible_user=mrtshoot ansible_port=54213
 
+[API.CLOUDPAYSERVICE.COM]
+api.cloudpayservice.com	ansible_user=mrtshoot ansible_port=22
+
+[MY.CLOUDPAYSERVICE.COM]
+my.cloudpayservice.com ansible_user=mrtshoot ansible_port=22
+
 #############INTRANET Mobtaker#####################
 [INTRANET]
 git.mobtaker.local ansible_user=mrtshoot ansible_port=22
 aphrodate.mobtaker.local ansible_user=mrtshoot ansible_port=22
-ido.mobtaker.local ansible_user=mrtshoot ansible_port=22
-ido-pwa.mobtaker.local ansible_user=mrtshoot ansible_port=22
-#mobtakercard.mobtaker.local ansible_user=mrtshoot ansible_port=22
 localhub.etod.me ansible_user=mrtshoot ansible_port=22
-#arion.mobtaker.local ansible_user=mrtshoot ansible_port=22
 minimum.mobtaker.local ansible_user=mrtshoot ansible_port=22
 sentry.mobtaker.local ansible_user=mrtshoot ansible_port=22
 minimum-club.mobtaker.local ansible_user=mrtshoot ansible_port=22
 prom.mobtaker.local ansible_user=mrtshoot ansible_port=22
 dns.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
 remotehub.etod.me ansible_user=mrtshoot ansible_port=22
-ido.mobtaker.remote ansible_user=mrtshoot ansible_port=22
-ido-pwa.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 mobtakercard.mobtaker.remote ansible_user=mrtshoot ansible_port=22
-#arion.mobtaker.remote ansible_user=mrtshoot ansible_port=22
+hamrahapi.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 minimum.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 minimum-aaniro.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 minimum-ghabz.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 minimum-charge.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 minimum-club.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 cronaweb.mobtaker.remote ansible_user=mrtshoot ansible_port=22
-#cronacrawler.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 topchange.mobtaker.local ansible_user=mrtshoot ansible_port=22
 topchange.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 egom-web.mobtaker.local ansible_user=mrtshoot ansible_port=22
@@ -228,9 +192,9 @@ jaheshfund.mobtaker.local ansible_user=mrtshoot ansible_port=22
 jaheshfund.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 etod.mobtaker.local ansible_user=mrtshoot ansible_port=22
 nahayatnegar.mobtaker.local ansible_user=mrtshoot ansible_port=22
-nexus.mobtakerteam.com ansible_user=mrtshoot ansible_port=22
 hamrahportal.mobtaker.local ansible_user=mrtshoot ansible_port=22
-#hamrahportal.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
+sejam.mobtaker.local ansible_user=mrtshoot ansible_port=22
+hamrahapi.mobtaker.local ansible_user=mrtshoot ansible_port=22
 
 [zabbix]
 minimum-club.mobtaker.local ansible_user=mrtshoot ansible_port=22
@@ -253,14 +217,10 @@ proxy.mobtaker.remote ansible_user=mrtshoot ansible_port=54213
 openvpn.mobtaker.remote  ansible_user=mrtshoot ansible_port=54213
 mobotel.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
 dns.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
-nexus.mobtakerteam.com ansible_user=mrtshoot ansible_port=22
 cronaweb.mobtaker.remote ansible_user=mrtshoot ansible_port=22
-#cronacrawler.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 remotehub.etod.me ansible_user=mrtshoot ansible_port=22
-ido.mobtaker.remote ansible_user=mrtshoot ansible_port=22
-ido-pwa.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 mobtakercard.mobtaker.remote ansible_user=mrtshoot ansible_port=22
-#arion.mobtaker.remote ansible_user=mrtshoot ansible_port=22
+hamrahapi.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 minimum.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 minimum-aaniro.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 minimum-ghabz.mobtaker.remote ansible_user=mrtshoot ansible_port=22
@@ -268,7 +228,7 @@ minimum-charge.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 minimum-club.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 etod.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 etod2.mobtaker.remote ansible_user=mrtshoot ansible_port=22
-aphrodate-mine.mobtaker.remote  ansible_user=mrtshoot ansible_port=22
+hamrahapi.mobtaker.remote  ansible_user=mrtshoot ansible_port=22
 topchange.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 egom-web.mobtaker.remote ansible_user=mrtshoot ansible_port=22
 jaheshfund.mobtaker.remote ansible_user=mrtshoot ansible_port=22
@@ -276,11 +236,7 @@ nahayatnegar.mobtaker.remote ansible_user=mrtshoot ansible_port=47356
 git.mobtaker.local ansible_user=mrtshoot ansible_port=22
 etod.mobtaker.local ansible_user=mrtshoot ansible_port=22
 aphrodate.mobtaker.local ansible_user=mrtshoot ansible_port=22
-ido.mobtaker.local ansible_user=mrtshoot ansible_port=22
-ido-pwa.mobtaker.local ansible_user=mrtshoot ansible_port=22
-#mobtakercard.mobtaker.local ansible_user=mrtshoot ansible_port=22
 localhub.etod.me ansible_user=mrtshoot ansible_port=22
-#arion.mobtaker.local ansible_user=mrtshoot ansible_port=22
 minimum.mobtaker.local ansible_user=mrtshoot ansible_port=22
 minimum-club.mobtaker.local ansible_user=mrtshoot ansible_port=22
 sentry.mobtaker.local ansible_user=mrtshoot ansible_port=22
@@ -292,10 +248,8 @@ jaheshfund.mobtaker.local ansible_user=mrtshoot ansible_port=22
 nahayatnegar.mobtaker.local ansible_user=mrtshoot ansible_port=22
 hamrahportal.mobtaker.local ansible_user=mrtshoot ansible_port=22
 hamrahportal.mobtaker.remote ansible_user=mrtshoot ansible_port=59286
+egom-otp.mobtaker.local	ansible_user=mrtshoot ansible_port=22
 
 ######################OpenStack##########################
-[CLOUD]
-oscontroller ansible_user=root ansible_port=22
-oscompute01 ansible_user=root ansible_port=22
-oscompute02 ansible_user=root ansible_port=22
-osnetwork ansible_user=root ansible_port=22
+
+######################K8SHamrahapi#######################

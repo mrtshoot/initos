@@ -1,22 +1,18 @@
 127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
 ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
-#TEST
-11.1.1.40	oscontroller.mobtaker.remote	oscontroller
-11.1.1.41	oscompute01.mobtaker.remote	oscompute01
-11.1.1.42	oscompute02.mobtaker.remote	oscompute02
-11.1.1.43	osnetwork.mobtaker.remote	osnetwork
 ############MOBTAKER.LOCAL#######################
 192.168.0.6		hamrahportal.mobtaker.local
 #192.168.0.9             mobtakercard.mobtaker.local
 192.168.0.12            localhub.etod.me
 192.168.0.13            zabbix.mobtaker.local
 192.168.0.33		topchange.mobtaker.local
+192.168.0.14		sejam.mobtaker.local
 192.168.0.15		ansible.mobtaker.local
-192.168.0.16		vpn.mobtaker.local
-192.168.0.17            ido-pwa.mobtaker.local
-192.168.0.18            ido.mobtaker.local
+192.168.0.16		rke.mobtaker.local	#vpn.mobtaker.local	
+192.168.0.17            minion2.mobtaker.local	#ido-pwa.mobtaker.local
+192.168.0.18            minion1.mobtaker.local	#ido.mobtaker.local
 192.168.0.19            sentry.mobtaker.local
-192.168.0.25            arion.mobtaker.local
+192.168.0.25            hamrahapi.mobtaker.local
 192.168.0.28		mail.mobtaker.local mail.mobtakerteam.com
 192.168.0.29            minimum.mobtaker.local
 192.168.0.30            aphrodate.mobtaker.local
@@ -27,6 +23,8 @@
 192.168.0.36		nahayatnegar.mobtaker.local
 192.168.0.37		egom-web.mobtaker.local
 192.168.0.38		nexus.mobtakerteam.com repo.mobtakerteam.com
+192.168.0.105		egom-otp.mobtaker.local
+192.168.0.103		git2.mobtaker.local
 192.168.0.141           git.mobtaker.local
 192.168.0.142           jenkins.mobtaker.local
 192.168.0.254           net.mobtaker.local
@@ -42,15 +40,17 @@
 11.1.1.16       ido-pwa.mobtaker.remote
 11.1.1.17       ido.mobtaker.remote
 11.1.1.23       aaniro.minimum.money  minimum-aaniro.mobtaker.remote
-11.1.1.25       aphrodate-mine.mobtaker.remote
+11.1.1.25       hamrahapi.mobtaker.remote  hamrahapi.com #aphrodate-mine.mobtaker.remote
 11.1.1.26       minimum-club.mobtaker.remote
 11.1.1.34	cronaweb.mobtaker.remote
-#11.1.1.35       cronacrawler.mobtaker.remote
 11.1.1.27	vpn.mobtaker.remote
 11.1.1.28	topchange.mobtaker.remote appardakht.mobtakerteam.com
 11.1.1.29	jaheshfund.mobtaker.remote jaheshfund.com
 11.1.1.30	etod.mobtaker.remote
 11.1.1.36	egom-web.mobtaker.remote
+11.1.1.50	k8smasterhamrahapi.mobtaker.remote
+11.1.1.51	k8sw1hamrahapi.mobtaker.remote
+11.1.1.52	k8sw2hamrahapi.mobtaker.remote
 37.156.144.178  mobotel.mobtaker.remote
 185.49.86.190   dns.mobtaker.remote
 176.9.235.213   aphrodate.mobtaker.remote
@@ -72,3 +72,6 @@
 45.82.137.177	nahayatnegar.mobtaker.remote
 79.175.138.122  hamrahportal.mobtaker.remote
 37.156.144.189	borscrawler.mobtaker.remote
+37.156.144.179	hiring.mobtaker.remote
+161.35.66.86	api.cloudpayservice.com
+104.248.19.124	my.cloudpayservice.com

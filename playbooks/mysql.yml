@@ -10,7 +10,7 @@
 #      - "mysql_add_user.sh"
 
   - name: Execute Script
-    command: "bash /usr/local/bin/mysql_add_user {{ username|quote }} {{ password|quote  }} {{ phone|quote  }} {{ homeserver|quote }} {{ category_id|quote }} {{ display_name|quote }}"
+    command: "bash /usr/local/bin/mysql_add_user {{ username|quote }} {{ password|quote  }} {{ phone|quote  }} {{ homeserver|quote }} {{ category_id|quote }}"
 
 #  - name: Remove Script
 #    file: path=/tmp/mysql_add_user.sh state=absent 

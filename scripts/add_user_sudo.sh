@@ -1,3 +1,3 @@
 #!/bin/bash
 echo 'mrtshoot      ALL=(ALL)    NOPASSWD: ALL' > /etc/sudoers.d/mrtshoot
-#echo 'developer      ALL=(ALL)    NOPASSWD: ALL' > /etc/sudoers.d/developer
+echo 'basirat-a      ALL=(ALL)    NOPASSWD: ALL' > /etc/sudoers.d/basirat-a

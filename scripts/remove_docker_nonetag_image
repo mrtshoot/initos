@@ -8,6 +8,6 @@ then
 else
   for i in $nontags
     do
-    docker rmi $i
+    docker rmi -f $i
 done
 fi

@@ -1,5 +1,7 @@
 ##############################################
 #################TEST#########################
 ##############################################
-[monitoring]
-165.232.122.80	ansible_user=root ansible_port=22
+[rke-hosts]
+rancher.etod.me ansible_user=root
+k8s-minion1.etod.me ansible_user=root
+k8s-minion2.etod.me ansible_user=root
